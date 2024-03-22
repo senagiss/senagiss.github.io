@@ -34,6 +34,11 @@ function obtenerFechaHoraActual() {
 function agregarCeroDelante(numero) {
     return numero < 10 ? '0' + numero : numero;
 }
+// Obtener el elemento donde se mostrará la fecha y hora de la última actualización
+const lastUpdatedElement = document.querySelector('#last-updated span');
+
+// Mostrar la fecha y hora de la última actualización
+lastUpdatedElement.textContent = obtenerFechaHoraActual();
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,10 +68,3 @@ function agregarCeroDelante(numero) {
 
 </body>
 </html>
-
-
-// Obtener el elemento donde se mostrará la fecha y hora de la última actualización
-const lastUpdatedElement = document.querySelector('#last-updated span');
-
-// Mostrar la fecha y hora de la última actualización
-lastUpdatedElement.textContent = obtenerFechaHoraActual();
