@@ -126,21 +126,23 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    position: relative;
     color: white; /* Color de la letra para el mensaje */
     text-align: center;
   }
 
-  .image-container {
-    position: absolute;
+  .images-container {
+    position: fixed;
     top: 0;
     right: 0;
-    width: 200px; /* Ancho de la imagen */
+    width: 200px; /* Ancho del contenedor de imágenes */
+    padding: 20px; /* Espacio entre las imágenes y el borde de la pantalla */
+    box-sizing: border-box;
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
   }
 
-  .image-container img {
-    width: 100%;
+  .images-container img {
     display: block;
+    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
     margin-bottom: 10px; /* Espacio entre las imágenes */
   }
 </style>
@@ -148,11 +150,14 @@
 <body>
 
 <!-- Contenido de tu página -->
-<div class="image-container">
+<h1>Título Principal</h1>
+<p>Contenido existente aquí.</p>
+
+<!-- Contenedor de imágenes -->
+<div class="images-container">
   <img src="Logotipo SENNOVA..png">
-  <img src="REDIIS_Mesa de trabajo 1 copia.png2">
+  <img src="REDIIS_Mesa de trabajo 1 copia.png">
 </div>
 
 </body>
 </html>
-
