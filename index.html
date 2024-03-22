@@ -115,7 +115,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imagen Encima de Fondo de Pantalla Fijo</title>
+<title>Imagen Encima de Fondo de Pantalla</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -130,17 +130,45 @@
   }
 
   .image-overlay {
-    position: below;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 9999; /* Asegura que esté por encima del fondo de pantalla */
   }
 </style>
 </head>
 <body>
+
+<!-- Contenido de tu página -->
+<h1>Título Principal</h1>
+<p>Contenido existente aquí.</p>
+
 <!-- Imagen encima del fondo de pantalla -->
-<img class="image-overlay" src="logo verde_Mesa de trabajo 1.png" alt="logo verde_Mesa de trabajo 1.png">
+<img id="image-overlay" class="image-overlay" src="logo verde_Mesa de trabajo 1.png" alt="logo verde_Mesa de trabajo 1.png">
+
+<!-- Script para mostrar y ocultar la imagen al hacer clic en el contenido -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var imageOverlay = document.getElementById('image-overlay');
+
+    // Función para mostrar u ocultar la imagen
+    function toggleImage() {
+      if (imageOverlay.style.display === 'none') {
+        imageOverlay.style.display = 'block';
+      } else {
+        imageOverlay.style.display = 'none';
+      }
+    }
+
+    // Agregar evento de clic al contenido para mostrar u ocultar la imagen
+    document.body.addEventListener('click', function() {
+      toggleImage();
+    });
+  });
+</script>
 
 </body>
 </html>
+
