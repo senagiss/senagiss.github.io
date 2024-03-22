@@ -8,27 +8,27 @@ body {
 }
 
 header {
-    background-color: #08B006; /* Verde */
+    background-color: #000000; /* black */
     padding: 20px;
     text-align: center;
-    color: white; /* Color de la letra para el encabezado */
+    color: black; /* Color de la letra para el encabezado */
 }
 
 h1 {
     margin: 0;
-    color: Blue; /* Color de la letra para los encabezados h1 */
+    color: black; /* Color de la letra para los encabezados h1 */
 }
 
 footer {
-    background-color: #08B006; /* Verde */
+    background-color: #000000; /* black */
     padding: 10px;
     text-align: center;
-    color: white; /* Color de la letra para el pie de página */
+    color: black; /* Color de la letra para el pie de página */
 }
 
 #last-updated {
     font-style: italic;
-    color: gray; /* Color de la letra para el texto de la última actualización */
+    color: black; /* Color de la letra para el texto de la última actualización */
 }
 
 .toggle-button {
@@ -48,6 +48,6 @@ footer {
 .content {
     display: none;
     padding: 10px;
-    background-color: #f2f2f2; /* Gris claro */
+    background-color: #000000; /* black */
     color: red; /* Color de la letra para el contenido */
 }
