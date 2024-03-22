@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3AE372; /* Verde pastel */
+}
+
+header {
+    background-color: #08B006; /* Verde */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+#menu {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #08B006; /* Verde */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+#last-updated {
+    font-style: italic;
+}
+
+.toggle-button {
+    background-color: #08B006; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #FF0000; /* Verde más oscuro */
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #f2f2f2; /* Gris claro */
+}
