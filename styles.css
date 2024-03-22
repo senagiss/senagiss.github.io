@@ -8,31 +8,31 @@ body {
 }
 
 header {
-    background-color: #08B006; /* verde */
+    background-color: #0EA55C; /* azul */
     padding: 20px;
     text-align: center;
-    color: verde; /* Color de la letra para el encabezado */
+    color: white; /* Color de la letra para el encabezado */
 }
 
 h1 {
     margin: 0;
-    color: black; /* Color de la letra para los encabezados h1 */
+    color: white; /* Color de la letra para los encabezados h1 */
 }
 
 footer {
-    background-color: #08B006; /* verde */
+    background-color: #0EA55C; /* azul */
     padding: 10px;
     text-align: center;
-    color: verde; /* Color de la letra para el pie de página */
+    color: white ; /* Color de la letra para el pie de página */
 }
 
 #last-updated {
     font-style: italic;
-    color: black; /* Color de la letra para el texto de la última actualización */
+    color: white; /* Color de la letra para el texto de la última actualización */
 }
 
 .toggle-button {
-    background-color: #08B006; /* Verde */
+    background-color: #0EA55C; /* Verde */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
@@ -48,6 +48,6 @@ footer {
 .content {
     display: none;
     padding: 10px;
-    background-color: #ffffff; /* black */
-    color: black; /* Color de la letra para el contenido */
+    background-color: #ffffff; /* blanco */
+    color: write; /* Color de la letra para el contenido */
 }
