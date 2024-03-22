@@ -110,5 +110,42 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texto en la Parte de Abajo de la Página</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f0f0f0; /* Color de fondo de la página */
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenido de tu página -->
+<h1>Título Principal</h1>
+<p>Contenido existente aquí.</p>
+
+<!-- Texto en la parte de abajo -->
+<div class="bottom-text">
+  <p>Texto en la parte de abajo de la página</p>
+</div>
+
+</body>
+</html>
 
 
