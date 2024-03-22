@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #08B006; /* black */
+    background-color: #08B006; /* verde */
     padding: 20px;
     text-align: center;
     color: verde; /* Color de la letra para el encabezado */
@@ -20,7 +20,7 @@ h1 {
 }
 
 footer {
-    background-color: #08B006; /* black */
+    background-color: #08B006; /* verde */
     padding: 10px;
     text-align: center;
     color: verde; /* Color de la letra para el pie de página */
