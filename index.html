@@ -115,46 +115,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imágenes en la Parte Derecha
+<title>Imagen Encima de Fondo de Pantalla Fijo</title>
+<style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('nombre_de_tu_imagen_de_fondo.jpg');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fondo de pantalla fijo */
     height: 100vh;
-    color: white; /* Color de la letra para el mensaje */
-    text-align: center;
+    position: relative; /* Asegura que el posicionamiento absoluto sea relativo al cuerpo */
   }
 
-  .images-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px; /* Ancho del contenedor de imágenes */
-    padding: 20px; /* Espacio entre las imágenes y el borde de la pantalla */
-    box-sizing: border-box;
-    z-index: 9999; /* Asegura que esté por encima de otros elementos */
-  }
-
-  .images-container img {
-    display: block;
-    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
-    margin-bottom: 10px; /* Espacio entre las imágenes */
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que esté por encima del fondo de pantalla */
   }
 </style>
 </head>
 <body>
 
 <!-- Contenido de tu página -->
+<h1>Título Principal</h1>
+<p>Contenido existente aquí.</p>
 
-
-<!-- Contenedor de imágenes -->
-<div class="images-container">
-  <img src="REDIIS_Mesa de trabajo 1 copia.png">
-</div>
+<!-- Imagen encima del fondo de pantalla -->
+<img class="image-overlay" src="imagen.jpg" alt="REDIIS_Mesa de trabajo 1 copia.png">
 
 </body>
 </html>
