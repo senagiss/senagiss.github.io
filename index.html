@@ -115,59 +115,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imagen Encima de Fondo de Pantalla</title>
+<title>Imagen en la Parte de Abajo Centrada</title>
 <style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fondo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Fondo de pantalla fijo */
+    background-color: #f0f0f0; /* Color de fondo de pantalla */
     height: 100vh;
-    position: relative; /* Asegura que el posicionamiento absoluto sea relativo al cuerpo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .image-overlay {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0%;
-    transform: translateX(-0%);
-    z-index: 9999; /* Asegura que esté por encima del fondo de pantalla */
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bottom-image {
+    margin-bottom: 20px; /* Espacio entre la imagen y el borde inferior */
+    text-align: center;
   }
 </style>
 </head>
 <body>
 
 <!-- Contenido de tu página -->
-<h1>Título Principal</h1>
-<p>Contenido existente aquí.</p>
+<div class="content">
+  <h1>Título Principal</h1>
+  <p>Contenido existente aquí.</p>
+</div>
 
-<!-- Imagen encima del fondo de pantalla -->
-<img id="image-overlay" class="image-overlay" src="logo verde_Mesa de trabajo 1.png" alt="logo verde_Mesa de trabajo 1.png">
-
-<!-- Script para mostrar y ocultar la imagen al hacer clic en el contenido -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var imageOverlay = document.getElementById('image-overlay');
-
-    // Función para mostrar u ocultar la imagen
-    function toggleImage() {
-      if (imageOverlay.style.display === 'none') {
-        imageOverlay.style.display = 'block';
-      } else {
-        imageOverlay.style.display = 'none';
-      }
-    }
-
-    // Agregar evento de clic al contenido para mostrar u ocultar la imagen
-    document.body.addEventListener('click', function() {
-      toggleImage();
-    });
-  });
-</script>
+<!-- Imagen en la parte de abajo centrada -->
+<div class="bottom-image">
+  <img src="imagen.jpg" alt="logo verde_Mesa de trabajo 1.png">
+</div>
 
 </body>
 </html>
