@@ -34,6 +34,36 @@ function obtenerFechaHoraActual() {
 function agregarCeroDelante(numero) {
     return numero < 10 ? '0' + numero : numero;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis de Porcentaje</title>
+</head>
+<body>
+
+<script>
+  // Función para generar un porcentaje aleatorio entre 1 y 100
+  function generarPorcentaje() {
+    var porcentaje = Math.floor(Math.random() * 100) + 1; // Genera un número aleatorio entre 1 y 100
+    return porcentaje;
+  }
+
+  // Función para mostrar el porcentaje en la consola y en el documento
+  function mostrarPorcentaje() {
+    var porcentaje = generarPorcentaje();
+    console.log('Porcentaje: ' + porcentaje + '%'); // Muestra el porcentaje en la consola
+    document.body.innerHTML += '<p>Porcentaje: ' + porcentaje + '%</p>'; // Muestra el porcentaje en el documento
+  }
+
+  // Llama a la función mostrarPorcentaje cuando se carga la página
+  window.onload = mostrarPorcentaje;
+</script>
+
+</body>
+</html>
+
 
 // Obtener el elemento donde se mostrará la fecha y hora de la última actualización
 const lastUpdatedElement = document.querySelector('#last-updated span');
