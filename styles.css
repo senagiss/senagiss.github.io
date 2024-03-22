@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #000000; /* black */
+    background-color: #FFFFFF; /* black */
     padding: 20px;
     text-align: center;
     color: black; /* Color de la letra para el encabezado */
@@ -20,7 +20,7 @@ h1 {
 }
 
 footer {
-    background-color: #000000; /* black */
+    background-color: #FFFFFF; /* black */
     padding: 10px;
     text-align: center;
     color: black; /* Color de la letra para el pie de página */
@@ -42,12 +42,12 @@ footer {
 }
 
 .toggle-button:hover {
-    background-color: #FF0000; /* Verde más oscuro */
+    background-color: #ff0000; /* Verde más oscuro */
 }
 
 .content {
     display: none;
     padding: 10px;
-    background-color: #FFFFFF; /* black */
+    background-color: #ffffff; /* black */
     color: black; /* Color de la letra para el contenido */
 }
