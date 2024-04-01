@@ -109,20 +109,4 @@ footer {
 
 </body>
 </html>
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row {
-    display: flex;
-    width: 100%;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
 
