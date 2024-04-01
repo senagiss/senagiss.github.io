@@ -40,3 +40,26 @@ const lastUpdatedElement = document.querySelector('#last-updated span');
 // Mostrar la fecha y hora de la última actualización
 lastUpdatedElement.textContent = obtenerFechaHoraActual();
 
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('container');
+
+    for (let i = 0; i < 17; i++) {
+        const row = document.createElement('div');
+        row.classList.add('row');
+
+        const column1 = document.createElement('div');
+        column1.classList.add('column');
+        column1.textContent = `Celda ${i + 1} - Columna 1`;
+
+        const column2 = document.createElement('div');
+        column2.classList.add('column');
+        column2.textContent = `Celda ${i + 1} - Columna 2`;
+
+        row.appendChild(column1);
+        row.appendChild(column2);
+
+        container.appendChild(row);
+    }
+});
+
+
