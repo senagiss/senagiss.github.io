@@ -48,7 +48,7 @@ footer {
 .content {
     display: none;
     padding: 10px;
-    background-color: #000000; /* blanco */
+    background-color: #FFFFFF; /* blanco */
     color: black; /* Color de la letra para el contenido */
 }
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ footer {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: FFFFFF; /* Verde pastel */
+    background-color: 000000; /* Verde pastel */
   }
 
   .background-container {
@@ -85,15 +85,15 @@ footer {
   }
 
   h1 {
-    color: #FFFFFF; /* Color rojo para el título h1 */
+    color: #000000; /* Color rojo para el título h1 */
   }
 
   h2 {
-    color: #FFFFFF; /* Color verde para el título h2 */
+    color: #000000; /* Color verde para el título h2 */
   }
 
   h3 {
-    color: #FFFFFF; /* Color azul para el título h3 */
+    color: #000000; /* Color azul para el título h3 */
   }
 </style>
 </head>
