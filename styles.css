@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #13B905; /* Verde pastel */
+    background-color: #5BABF1; /* Verde pastel */
     color: black; /* Color de la letra para todo el cuerpo */
 }
 
 header {
-    background-color: #13B905; /* verde */
+    background-color: #5BABF1; /* verde */
     padding: 20px;
     text-align: center;
     color: white; /* Color de la letra para el encabezado */
@@ -20,7 +20,7 @@ h1 {
 }
 
 footer {
-    background-color: #13B905; /* verde */
+    background-color: #5BABF1; /* verde */
     padding: 10px;
     text-align: center;
     color: white ; /* Color de la letra para el pie de página */
@@ -32,7 +32,7 @@ footer {
 }
 
 .toggle-button {
-    background-color: #13B905; /* Verde */
+    background-color: #5BABF1; /* Verde */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ footer {
 }
 
 .toggle-button:hover {
-    background-color: #13B905; /* Verde más oscuro */
+    background-color: #5BABF1; /* Verde más oscuro */
 }
 
 .content {
