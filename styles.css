@@ -32,7 +32,7 @@ footer {
 }
 
 .toggle-button {
-    background-color: #5BABF1; /* morado */
+    background-color: #ffffff; /* blanco */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
@@ -42,13 +42,13 @@ footer {
 }
 
 .toggle-button:hover {
-    background-color: #5BABF1; /* morado */
+    background-color: #5BABF1; /* blanco */
 }
 
 .content {
     display: none;
     padding: 10px;
-    background-color: #FFFFFF; /* blanco */
+    background-color: #000000; /* negro */
     color: black; /* Color de la letra para el contenido */
 }
 <!DOCTYPE html>
