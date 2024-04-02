@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8C17B1; /* Verde pastel */
+    background-color: #0EA55C; /* Verde pastel */
     color: black; /* Color de la letra para todo el cuerpo */
 }
 
@@ -32,7 +32,7 @@ footer {
 }
 
 .toggle-button {
-    background-color: #3317B1; /* Verde */
+    background-color: #0EA55C; /* Verde */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ footer {
 }
 
 .toggle-button:hover {
-    background-color: #3317B1; /* Verde más oscuro */
+    background-color: #0EA55C; /* Verde más oscuro */
 }
 
 .content {
