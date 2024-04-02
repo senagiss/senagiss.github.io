@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5BABF1; /* morado */
+    background-color: #ffffff; /* morado */
     color: black; /* Color de la letra para todo el cuerpo */
 }
 
 header {
-    background-color: #5BABF1; /* morado */
+    background-color: #ffffff; /* morado */
     padding: 20px;
     text-align: center;
     color: white; /* Color de la letra para el encabezado */
@@ -20,7 +20,7 @@ h1 {
 }
 
 footer {
-    background-color: #5BABF1; /* morado */
+    background-color: #ffffff; /* morado */
     padding: 10px;
     text-align: center;
     color: white ; /* Color de la letra para el pie de página */
