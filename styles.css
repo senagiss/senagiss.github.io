@@ -48,7 +48,7 @@ footer {
 .content {
     display: none;
     padding: 10px;
-    background-color: #000000; /* negro */
+    background-color: #ffffff; /* blanco */
     color: blanco; /* Color de la letra para el contenido */
 }
 <!DOCTYPE html>
