@@ -3,18 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* blanco */
-    color: black; /*titulo salud publica giss */
+    background-color: #5BABF1; /* azul */
+    color: black; /*fondo titulo */
 }
 
 header {
-    background-color: #ffffff; /* blanco */
+    background-color: #5BABF1; /* azul */
     padding: 20px;
     text-align: center;
-    color: white; /* Prevenir es clave para la salud."
-"Hábitos saludables para todos."
-"Promoviendo bienestar juntos."
-"Acceso equitativo a la atención." */
+    color: white; /* parte de abajo fondo azul exclusivamente para ti */
 }
 
 h1 {
