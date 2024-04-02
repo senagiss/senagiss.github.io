@@ -376,35 +376,42 @@ Este instrumento de planeación de carácter nacional y regional compromete a lo
 <h1>¡Exclusivamente para Ti!</h1>
    <p>SENNOVA SISTEMA DE INVESTIGACIÓN DESARROLLO TECNOLÓGICO E INNOVACIÓN</p>
       <p>  SENA CFTH
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con fondo degradado y textura de morado</title>
+    <title>Página con textura de fondo</title>
     <style>
-        /* Estilos para el cuerpo de la página */
-        body {
+        /* Establece el tamaño de la ventana completa */
+        html, body {
+            height: 100%;
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #800080, #BA55D3), url('19373.jpg'); /* Degradado de morado y textura */
-            height: 100vh; /* Ajusta el tamaño al 100% de la ventana visible */
-            color: white; /* Color de texto blanco para contrastar */
+        }
+
+        /* Establece la imagen de fondo como textura */
+        body {
+            background-image: url('19373.jpg');
+            background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
         }
 
         /* Estilos para el contenido */
         .content {
             padding: 20px; /* Espacio interno alrededor del contenido */
+            color: white; /* Color de texto blanco para contrastar con la textura */
+            text-align: center; /* Centra el contenido horizontalmente */
+            font-family: Arial, sans-serif; /* Tipo de fuente */
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Bienvenido a mi página con fondo degradado y textura de morado</h1>
-        <p>Aquí puedes agregar el contenido que desees. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non magna quis enim eleifend pharetra. Etiam auctor massa at purus pharetra, in aliquam purus fermentum.</p>
+        <h1>Bienvenido a mi página con textura de fondo</h1>
+        <p>Aquí puedes agregar el contenido que desees.</p>
     </div>
 </body>
 </html>
+
+
+
