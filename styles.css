@@ -1,46 +1,116 @@
-/* Agrega estos estilos al final de tu archivo styles.css */
 
-/* Estilos para los botones */
-button {
-    padding: 10px 20px; /* Padding uniforme para todos los botones */
-    font-size: 16px; /* Tamaño de fuente uniforme para todos los botones */
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Borde */
-    cursor: pointer; /* Cursor al pasar el mouse */
-    margin-bottom: 10px; /* Espacio entre los botones */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3AE372; /* Verde pastel */
+    color: black; /* Color de la letra para todo el cuerpo */
 }
 
-/* Estilos para los enlaces dentro de los botones */
-button a {
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: inherit; /* Hereda el color del texto del botón */
+header {
+    background-color: #0EA55C; /* azul */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Color de la letra para el encabezado */
 }
 
-/* Estilos adicionales para los botones según su clase */
+h1 {
+    margin: 0;
+    color: white; /* Color de la letra para los encabezados h1 */
+}
+
+footer {
+    background-color: #0EA55C; /* azul */
+    padding: 10px;
+    text-align: center;
+    color: white ; /* Color de la letra para el pie de página */
+}
+
+#last-updated {
+    font-style: italic;
+    color: white; /* Color de la letra para el texto de la última actualización */
+}
+
 .toggle-button {
-    background-color: #008CBA; /* Cambia el color de fondo */
+    background-color: #0EA55C; /* Verde */
+    color: white; /* Color de la letra para los botones */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
 }
 
-/* Pseudo-clases para resaltar los botones al pasar el mouse */
-button:hover {
-    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+.toggle-button:hover {
+    background-color: #ff0000; /* Verde más oscuro */
 }
 
-/* Estilos para el menú */
-#menu {
-    display: none; /* Oculta el menú por defecto */
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #ffffff; /* blanco */
+    color: write; /* Color de la letra para el contenido */
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página con Títulos Personalizados</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: FFFFFF; /* Verde pastel */
+  }
 
-/* Estilos adicionales para los enlaces dentro del menú */
-#menu a {
-    display: block; /* Convierte los enlaces en bloques para ocupar todo el ancho del contenedor */
-    padding: 10px; /* Espaciado interno */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: black; /* Color de texto */
-}
+  .background-container {
+    background-image: url('nombre_de_tu_imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Color de la letra para el mensaje */
+    text-align: center;
+  }
 
-/* Pseudo-clases para resaltar los enlaces del menú al pasar el mouse */
-#menu a:hover {
-    background-color: #f2f2f2; /* Cambia el color de fondo al pasar el mouse */
+  .content {
+    /* Aquí puedes agregar estilos adicionales para el contenido de tu página */
+    padding: 20px;
+  }
+
+  h1 {
+    color: #FFFFFF; /* Color rojo para el título h1 */
+  }
+
+  h2 {
+    color: #FFFFFF; /* Color verde para el título h2 */
+  }
+
+  h3 {
+    color: #FFFFFF; /* Color azul para el título h3 */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenido de tu página -->
+<div class="background-container">
+  <h1>Mi Título Principal</h1>
+  <h2>Subtítulo</h2>
+  <h3>Otro Título</h3>
+  <p>Aquí va el contenido de tu página.</p>
+</div>
+
+</body>
+</html>
+
+button {
+    width: 200px; /* Ancho fijo para todos los botones */
+    padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
