@@ -48,8 +48,8 @@ footer {
 .content {
     display: none;
     padding: 10px;
-    background-color: #ffffff; /* blanco */
-    color: write; /* Color de la letra para el contenido */
+    background-color: #000000; /* blanco */
+    color: black; /* Color de la letra para el contenido */
 }
 <!DOCTYPE html>
 <html lang="en">
