@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,15 +32,13 @@ footer {
 }
 
 .toggle-button {
-    background-color: #5BABF1; /* azul */
+    background-color: #5BABF1; /* white */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     display: block;
     margin-bottom: 10px;
-    margin: 0 auto; /* Centra el botón horizontalmente */
-    display: block; /* Hace que el botón ocupe todo el ancho disponible */
 }
 
 .toggle-button:hover {
@@ -51,4 +50,67 @@ footer {
     padding: 10px;
     background-color: #ffffff; /* blanco */
     color: blanco; /* Color de la letra para el contenido */
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página con Títulos Personalizados</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ffffff; /* blanco */
+  }
+
+  .background-container {
+    background-image: url('nombre_de_tu_imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Color de la letra para el mensaje */
+    text-align: center;
+  }
+
+  .content {
+    /* Aquí puedes agregar estilos adicionales para el contenido de tu página */
+    padding: 20px;
+  }
+
+  h1 {
+    color: #ffffff; /* Color rojo para el título h1 */
+  }
+
+  h2 {
+    color: #ffffff; /* Color verde para el título h2 */
+  }
+
+  h3 {
+    color: #ffffff; /* Color azul para el título h3 */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenido de tu página -->
+<div class="background-container">
+  <h1>Mi Título Principal</h1>
+  <h2>Subtítulo</h2>
+  <h3>Otro Título</h3>
+  <p>Aquí va el contenido de tu página.</p>
+</div>
+
+</body>
+</html>
+
+button {
+    width: 200px; /* Ancho fijo para todos los botones */
+    padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
