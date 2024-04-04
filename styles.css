@@ -1,53 +1,116 @@
 
-/* Estilos para el menú */
-.menu {
-  background-color: #222;
-  padding: 0;
-  margin: 0;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5BABF1; /* azul */
+    color: black; /*fondo titulo */
 }
 
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+header {
+    background-color: #5BABF1; /* azul */
+    padding: 20px;
+    text-align: center;
+    color: white; /* parte de abajo fondo azul exclusivamente para ti */
 }
 
-.menu ul li {
-  position: relative;
-  display: inline-block;
+h1 {
+    margin: 0;
+    color: white; /* Color de la letra para los encabezados h1 */
 }
 
-.menu ul li a {
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Arial', sans-serif;
+footer {
+    background-color: #5BABF1; /* azul */
+    padding: 10px;
+    text-align: center;
+    color: white ; /* Color de la letra para el pie de página */
 }
 
-.menu ul li:hover > a {
-  background-color: #333;
+#last-updated {
+    font-style: italic;
+    color: white; /* Color de la letra para el texto de la última actualización */
 }
 
-.menu ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  border-top: 2px solid #555;
+.toggle-button {
+    background-color: #5BABF1; /* white */
+    color: white; /* Color de la letra para los botones */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.menu ul ul li {
-  display: block;
+.toggle-button:hover {
+    background-color: #FF0202; /* rojo */
 }
 
-.menu ul li:hover > ul {
-  display: block;
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #ffffff; /* blanco */
+    color: blanco; /* Color de la letra para el contenido */
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página con Títulos Personalizados</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ffffff; /* blanco */
+  }
 
-/* Efecto de transición */
-.menu ul,
-.menu ul ul {
-  transition: all 0.3s ease;
+  .background-container {
+    background-image: url('nombre_de_tu_imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Color de la letra para el mensaje */
+    text-align: center;
+  }
+
+  .content {
+    /* Aquí puedes agregar estilos adicionales para el contenido de tu página */
+    padding: 20px;
+  }
+
+  h1 {
+    color: #ffffff; /* Color rojo para el título h1 */
+  }
+
+  h2 {
+    color: #ffffff; /* Color verde para el título h2 */
+  }
+
+  h3 {
+    color: #ffffff; /* Color azul para el título h3 */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenido de tu página -->
+<div class="background-container">
+  <h1>Mi Título Principal</h1>
+  <h2>Subtítulo</h2>
+  <h3>Otro Título</h3>
+  <p>Aquí va el contenido de tu página.</p>
+</div>
+
+</body>
+</html>
+
+button {
+    width: 200px; /* Ancho fijo para todos los botones */
+    padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
