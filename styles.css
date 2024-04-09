@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -114,57 +113,3 @@ button {
     width: 200px; /* Ancho fijo para todos los botones */
     padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
-
-    header {
-        background-color: #f0f0f0; /* Color de fondo del encabezado */
-        padding: 10px 0; /* Espaciado interno del encabezado */
-        text-align: center; /* Alineación del texto al centro */
-    }
-
-    nav {
-        background-color: #333; /* Color de fondo del menú de navegación */
-        color: #fff; /* Color del texto del menú de navegación */
-        padding: 10px 0; /* Espaciado interno del menú de navegación */
-        text-align: center; /* Alineación del texto al centro */
-    }
-
-    nav ul {
-        list-style-type: none; /* Elimina los estilos de lista predeterminados */
-        padding: 0; /* Elimina el relleno de la lista */
-    }
-
-    nav ul li {
-        display: inline; /* Muestra los elementos de la lista en línea */
-        margin: 0 10px; /* Espacio entre los elementos de la lista */
-    }
-
-    main {
-        padding: 20px; /* Espaciado interno del contenido principal */
-    }
-
-    footer {
-        background-color: #333; /* Color de fondo del pie de página */
-        color: #fff; /* Color del texto del pie de página */
-        padding: 10px 0; /* Espaciado interno del pie de página */
-        text-align: center; /* Alineación del texto al centro */
-    }
-
-    footer p {
-        margin: 0; /* Elimina los márgenes predeterminados de los párrafos dentro del pie de página */
-    }
-
-    /* Ajustes específicos de tu contenido */
-    .container {
-        display: flex;
-        align-items: center; /* Alinear verticalmente */
-    }
-
-    .title {
-        margin-right: 20px; /* Espacio entre la imagen y el título */
-    }
-
-    img {
-        max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
-        height: auto; /* Mantiene la proporción */
-    }
-</style>
