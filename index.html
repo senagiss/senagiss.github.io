@@ -3,35 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Horizontal con Botones Desplegables y Submenús Editables</title>
+    <title>Menú Horizontal con Botones y Submenús</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>SALUD PÚBLICA CFTHS</h1>
+        <h1>Nombre de tu Sitio</h1>
         <nav>
-            <ul>
-                <li class="dropdown">
-                    <button class="dropbtn">Inicio</button>
-                    <div class="dropdown-content">
-                        <input type="text" placeholder="INTRODUCCIÓN">
-                        <button class="add-btn"> <p>• La salud pública es un campo multidisciplinario dedicado a proteger y mejorar la salud de las comunidades y la población en general. Se centra en la prevención de enfermedades, la promoción de estilos de vida saludables y la creación de políticas y programas que aborden los factores determinantes de la salud a nivel de población. La salud pública abarca una amplia gama de actividades, desde la vigilancia epidemiológica y la investigación hasta la educación pública, la planificación y gestión de servicios de salud, así como la promoción de la equidad en salud y el acceso a la atención médica. Su objetivo fundamental es mejorar la calidad de vida y reducir las disparidades de salud en las comunidades.</p>
-        <p>https://chat.openai.com/</p></button>
-                    </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <button class="menu-btn">Botón 1</button>
+                    <ul class="submenu">
+                        <li><a href="#">Subpágina 1.1</a></li>
+                        <li><a href="#">Subpágina 1.2</a></li>
+                        <li><a href="#">Subpágina 1.3</a></li>
+                    </ul>
                 </li>
-        <p>https://chat.openai.com/</p>
-                <li class="dropdown">
-                    <button class="dropbtn">Acerca de</button>
-                    <div class="dropdown-content">
-                        <input type="text" placeholder="Texto del botón">
-                        <button class="add-btn">Añadir Botón</button>
-                    </div>
+                <li class="menu-item">
+                    <button class="menu-btn">Botón 2</button>
+                    <ul class="submenu">
+                        <li><a href="#">Subpágina 2.1</a></li>
+                        <li><a href="#">Subpágina 2.2</a></li>
+                        <li><a href="#">Subpágina 2.3</a></li>
+                    </ul>
                 </li>
-                <!-- Otros elementos del menú -->
+                <li class="menu-item">
+                    <button class="menu-btn">Botón 3</button>
+                    <ul class="submenu">
+                        <li><a href="#">Subpágina 3.1</a></li>
+                        <li><a href="#">Subpágina 3.2</a></li>
+                        <li><a href="#">Subpágina 3.3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <button class="menu-btn">Botón 4</button>
+                    <ul class="submenu">
+                        <li><a href="#">Subpágina 4.1</a></li>
+                        <li><a href="#">Subpágina 4.2</a></li>
+                        <li><a href="#">Subpágina 4.3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <script src="script.js"></script>
 </body>
 </html>
-
