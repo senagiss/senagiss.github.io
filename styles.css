@@ -115,3 +115,6 @@ button {
     padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
 
+#contenido p {
+    text-align: justify;
+}
