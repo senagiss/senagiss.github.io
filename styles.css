@@ -55,3 +55,6 @@ header {
 .submenu a:hover {
     background-color: #ddd;
 }
+p {
+    text-align: justify;
+}
