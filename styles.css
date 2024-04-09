@@ -124,6 +124,7 @@ ul li a {
 li a {
     text-decoration: none;
 }
-#Noticias .content p {
+
+p {
     text-align: justify;
 }
