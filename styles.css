@@ -119,3 +119,6 @@ ul li a {
 .content p {
     text-align: justify;
 }
+li a {
+    text-decoration: none;
+}
