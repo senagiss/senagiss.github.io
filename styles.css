@@ -11,65 +11,48 @@ header {
     padding: 20px 0;
 }
 
-nav ul {
+.menu {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.menu-item {
     display: inline-block;
+    margin-right: 20px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.menu-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.dropdown-content {
+.menu-btn:hover {
+    background-color: #777;
+}
+
+.submenu {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
+    padding: 0;
+    list-style-type: none;
 }
 
-.dropdown-content input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+.submenu li {
+    margin: 0;
 }
 
-.dropdown-content .add-btn {
+.submenu a {
     display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
-
-.dropdown-content .add-btn:hover {
-    background-color: #555;
-}
-
-.dropdown.open .dropdown-content {
-    display: block;
-}
-
-.dropbtn {
-    background-color: #333;
-    color: white;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
-.dropbtn:hover {
-    background-color: #555;
+.submenu a:hover {
+    background-color: #ddd;
 }
-
 
