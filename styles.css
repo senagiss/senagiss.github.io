@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,34 +6,53 @@ body {
 }
 
 header {
-    background-color: #333;
     text-align: center;
+    background-color: #333;
     color: white;
     padding: 20px 0;
 }
 
-nav {
-    background-color: #444;
-}
-
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
-    display: inline;
+nav ul li {
+    display: inline-block;
+    position: relative;
 }
 
-a {
-    display: inline-block;
+nav ul li a {
+    display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
 }
 
-a:hover {
-    background-color: #555;
+nav ul li:hover > ul {
+    display: block;
 }
 
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
