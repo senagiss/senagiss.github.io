@@ -34,14 +34,21 @@ nav ul li {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content .sub-btn {
     display: block;
+    width: 100%;
     padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content .sub-btn:hover {
+    background-color: #ddd;
+}
+
+.dropdown.open .dropdown-content {
     display: block;
 }
 
