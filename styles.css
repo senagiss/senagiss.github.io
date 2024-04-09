@@ -116,3 +116,6 @@ button {
 ul li a {
     color: white;
 }
+.content p {
+    text-align: justify;
+}
