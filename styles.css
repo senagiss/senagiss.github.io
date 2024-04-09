@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5BABF1; /* azul */
+    background-color: #82DEF0; /* azul */
     color: black; /*fondo titulo */
 }
 
 header {
-    background-color: #5BABF1; /* azul */
+    background-color: #82DEF0; /* azul */
     padding: 20px;
     text-align: center;
     color: white; /* parte de abajo fondo azul exclusivamente para ti */
@@ -19,7 +19,7 @@ h1 {
 }
 
 footer {
-    background-color: #5BABF1; /* azul */
+    background-color: #82DEF0; /* azul */
     padding: 10px;
     text-align: center;
     color: white ; /* Color de la letra para el pie de página */
@@ -31,7 +31,7 @@ footer {
 }
 
 .toggle-button {
-    background-color: #5BABF1; /* white */
+    background-color: #82DEF0; /* white */
     color: white; /* Color de la letra para los botones */
     border: none;
     padding: 10px 20px;
