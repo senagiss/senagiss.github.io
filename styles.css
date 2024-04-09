@@ -52,7 +52,9 @@ footer {
 }
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>.content p {
+    text-align: justify;
+}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Página con Títulos Personalizados</title>
@@ -95,7 +97,9 @@ footer {
     color: #ffffff; /* Color azul para el título h3 */
   }
 </style>
-</head>
+</head>.content p {
+    text-align: justify;
+}
 <body>
 
 <!-- Contenido de tu página -->
