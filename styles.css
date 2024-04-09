@@ -113,3 +113,6 @@ button {
     width: 200px; /* Ancho fijo para todos los botones */
     padding: 10px; /* Ajuste de relleno para un mejor aspecto */
 }
+ul li a {
+    color: white;
+}
