@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Horizontal con Submenús</title>
+    <title>Menú Horizontal con Botones Desplegables</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,42 +11,41 @@
         <h1>Nombre de tu Sitio</h1>
         <nav>
             <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                    <ul class="submenu">
-                        <li><a href="#">Subpágina 1</a></li>
-                        <li><a href="#">Subpágina 2</a></li>
-                        <li><a href="#">Subpágina 3</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Inicio</button>
+                    <div class="dropdown-content">
+                        <a href="#">Subpágina 1</a>
+                        <a href="#">Subpágina 2</a>
+                        <a href="#">Subpágina 3</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Acerca de</a>
-                    <ul class="submenu">
-                        <li><a href="#">Subpágina 1</a></li>
-                        <li><a href="#">Subpágina 2</a></li>
-                        <li><a href="#">Subpágina 3</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Acerca de</button>
+                    <div class="dropdown-content">
+                        <a href="#">Subpágina 1</a>
+                        <a href="#">Subpágina 2</a>
+                        <a href="#">Subpágina 3</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="#">Subpágina 1</a></li>
-                        <li><a href="#">Subpágina 2</a></li>
-                        <li><a href="#">Subpágina 3</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Servicios</button>
+                    <div class="dropdown-content">
+                        <a href="#">Subpágina 1</a>
+                        <a href="#">Subpágina 2</a>
+                        <a href="#">Subpágina 3</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Contacto</a>
-                    <ul class="submenu">
-                        <li><a href="#">Subpágina 1</a></li>
-                        <li><a href="#">Subpágina 2</a></li>
-                        <li><a href="#">Subpágina 3</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Contacto</button>
+                    <div class="dropdown-content">
+                        <a href="#">Subpágina 1</a>
+                        <a href="#">Subpágina 2</a>
+                        <a href="#">Subpágina 3</a>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
 </body>
 </html>
-
 
