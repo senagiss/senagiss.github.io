@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #82DEF0; /* azul */
+    background-color: #39A900; /* azul */
     color: black; /*fondo titulo */
 }
 
 header {
-    background-color: #82DEF0; /* azul */
+    background-color: #39A900; /* azul */
     padding: 20px;
     text-align: center;
     color: white; /* parte de abajo fondo azul exclusivamente para ti */
@@ -19,7 +19,7 @@ h1 {
 }
 
 footer {
-    background-color: #82DEF0; /* azul */
+    background-color: #39A900; /* azul */
     padding: 10px;
     text-align: center;
     color: white ; /* Color de la letra para el pie de página */
