@@ -365,10 +365,40 @@ Este instrumento de planeación de carácter nacional y regional compromete a lo
     color: black; /* Color del texto */
     padding: 00px;
     text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.5); /* Sombra en el texto para mejor legibilidad */
+}
+
+  .background-image {
+    background-image: url('maestria-salud-publica-gestion-sanitaria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    color: black; /* Color del texto */
+    padding: 20px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0); /* Sombra en el texto para mejor legibilidad */
+    position: relative;
+    z-index: 2;
   }
 </style>
 </head>
 <body>
+
+<!-- Contenido de tu página -->
+<div class="background-container">
+  <div class="background-image"></div>
+  <div class="content">
+    <!-- Aquí va el contenido de tu página -->
+  </div>
+</div>
+
+</body>
+</html>
 
 <!-- Contenido de tu página -->
 <div class="background-container">
