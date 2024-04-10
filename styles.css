@@ -128,3 +128,15 @@ li a {
 p {
     text-align: justify;
 }
+.toggle-button {
+  border-radius: 10px; /* Ajusta este valor según el radio de redondeo deseado */
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
