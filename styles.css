@@ -140,3 +140,26 @@ p {
 .toggle-button:hover {
   background-color: #FFCE40; /* Cambia el color de fondo al pasar el mouse */
 }
+.image-container {
+  text-align: center; /* Esto alinea las imágenes en el centro */
+}
+
+.image-container img {
+  width: 100px; /* Ajusta el ancho de las imágenes según sea necesario */
+  height: auto;
+}
+
+.left {
+  float: left; /* Esto coloca la imagen a la izquierda */
+  margin-right: 10px; /* Agrega un pequeño margen a la derecha para separar las imágenes */
+}
+
+.center {
+  display: inline-block; /* Esto mantiene la imagen en línea con el texto */
+  margin: 0 10px; /* Agrega un pequeño margen a ambos lados para separar las imágenes */
+}
+
+.right {
+  float: right; /* Esto coloca la imagen a la derecha */
+  margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
+}
