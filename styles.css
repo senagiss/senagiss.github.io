@@ -129,10 +129,11 @@ p {
     text-align: justify;
 }
 .toggle-button {
-  border-radius: 20px; /* Ajusta este valor según el radio de redondeo deseado */
+  border-top-right-radius: 20px; /* Radio de redondeo para la esquina superior derecha */
+  border-bottom-right-radius: 20px; /* Radio de redondeo para la esquina inferior derecha */
   padding: 10px 20px;
-  background-color: #00324D; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
+  background-color: #00324D;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
