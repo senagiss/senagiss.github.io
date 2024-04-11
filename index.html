@@ -7,15 +7,15 @@
 <style>
   .container {
     position: relative;
-    width: 100px; /* Ancho del contenedor, ajusta según sea necesario */
-    height: 100px; /* Alto del contenedor, ajusta según sea necesario */
-    text-align: center; /* Para centrar la imagen */
+    width: 300px; /* Ancho del contenedor, ajusta según sea necesario */
+    height: 200px; /* Alto del contenedor, ajusta según sea necesario */
   }
 
   .image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     object-fit: cover; /* Para que la imagen se ajuste al contenedor sin deformarse */
@@ -24,6 +24,7 @@
   .title {
     position: relative;
     z-index: 1;
+    text-align: center;
     color: white; /* Color del texto */
     font-size: 24px; /* Tamaño del texto */
     line-height: 200px; /* Ajusta el line-height al alto del contenedor */
@@ -39,6 +40,7 @@
 
 </body>
 </html>
+
 
 <header>
         <h1>SALUD PÚBLICA CFTHS</h1>
