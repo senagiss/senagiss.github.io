@@ -61,7 +61,7 @@
 </body>
 </html>
           </ul>
-       <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -70,7 +70,7 @@
 <style>
   /* Estilo para el carrusel */
   .carousel-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -91,21 +91,19 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 1;
   }
 
-  .prev, .next {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 50%;
-    margin: 0 10px;
-  }
-    .prev {
-    left: 10px;
+  .prev {
+    left: 0;
   }
 
   .next {
-    right: 10px;
+    right: 0;
   }
 </style>
 </head>
@@ -121,7 +119,6 @@
     <img src="carrucel 2.jpg" alt="Imagen 2">
     <img src="carrucel 3.jpg" alt="Imagen 3">
     <img src="carrucel 4.jpg" alt="Imagen 4">
-
   </div>
   <div class="carousel-control prev" onclick="prevSlide()">❮</div>
   <div class="carousel-control next" onclick="nextSlide()">❯</div>
@@ -150,11 +147,6 @@
 </body>
 </html>
 
-</script>
-</body>
-</html>
-
-         
 </script>
 
 </body>
