@@ -61,7 +61,7 @@
 </body>
 </html>
           </ul>
-  <!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -119,7 +119,14 @@
     <img src="carrucel 2.jpg" alt="Imagen 2">
     <img src="carrucel 3.jpg" alt="Imagen 3">
     <img src="carrucel 4.jpg" alt="Imagen 4">
-
+    <img src="carrucel 1.jpg" alt="Imagen 1">
+    <img src="carrucel 2.jpg" alt="Imagen 2">
+    <img src="carrucel 3.jpg" alt="Imagen 3">
+    <img src="carrucel 4.jpg" alt="Imagen 4">
+    <img src="carrucel 1.jpg" alt="Imagen 1">
+    <img src="carrucel 2.jpg" alt="Imagen 2">
+    <img src="carrucel 3.jpg" alt="Imagen 3">
+    <img src="carrucel 4.jpg" alt="Imagen 4">
   </div>
   <div class="carousel-control prev" onclick="prevSlide()">❮</div>
   <div class="carousel-control next" onclick="nextSlide()">❯</div>
@@ -127,29 +134,29 @@
 
 <script>
   let carouselIndex = 0;
-  const totalSlides = document.querySelectorAll('.carousel img').length;
+  const slides = document.querySelectorAll('.carousel img');
+  const slideWidth = slides[0].clientWidth; // Ancho de una imagen
 
   function nextSlide() {
-    carouselIndex = (carouselIndex + 1) % totalSlides;
+    carouselIndex = (carouselIndex + 1) % slides.length;
     updateCarousel();
   }
 
   function prevSlide() {
-    carouselIndex = (carouselIndex - 1 + totalSlides) % totalSlides;
+    carouselIndex = (carouselIndex - 1 + slides.length) % slides.length;
     updateCarousel();
   }
 
   function updateCarousel() {
-    const offset = carouselIndex * -100;
-    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+    const offset = carouselIndex * -slideWidth;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
   }
 </script>
 
 </body>
 </html>
 
-
-</script>
+  </script>
 
 </body>
 </html>
