@@ -40,27 +40,7 @@
     </header>
     <nav id="menu">
         <ul>
-            <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo de cambio de color de texto en HTML</title>
-<style>
-  /* Estilo para cambiar el color del texto del enlace */
-  .enlace-colorido {
-    color: #00324D; /* Cambia el color del texto aquí */
-    /* Puedes usar cualquier formato de color que desees, como nombres de color, códigos hexadecimales, RGB, etc. */
-  }
-</style>
-</head>
-<body>
-<ul>
-  <li><a href="#" class="enlace-colorido">¡Bienvenido! Esta página te ofrece una experiencia única en el mundo de la salud. Descubre noticias, consejos y recursos para llevar una vida más saludable. ¡Explora y aprende con nosotros! Sennova crea para tí</a></li>
-</ul>
-</body>
-</html>
-  <!DOCTYPE html>
+         <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -69,20 +49,36 @@
 <style>
   /* Estilo para el carrusel */
   .carousel-container {
-    width: 50%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
+    position: relative;
   }
   
   .carousel {
     display: flex;
-    width: 50%; /* Ajusta el ancho según la cantidad de imágenes */
-    transition: transform 0.7s ease;
+    width: 80%; /* Ajusta el ancho según la cantidad de imágenes */
+    transition: transform 0.5s ease;
   }
   
   .carousel img {
-    width: 50%;
+    width: 80%;
     height: auto;
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .prev, .next {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
   }
 </style>
 </head>
@@ -94,16 +90,26 @@
     <img src="carrucel 2.jpg" alt="Imagen 2">
     <img src="carrucel 3.jpg" alt="Imagen 3">
     <img src="carrucel 4.jpg" alt="Imagen 4">
+    <img src="carrucel 1.jpg" alt="Imagen 1">
+    <img src="carrucel 2.jpg" alt="Imagen 2">
+    <img src="carrucel 3.jpg" alt="Imagen 3">
+    <img src="carrucel 4.jpg" alt="Imagen 4">
   </div>
+  <div class="carousel-control prev" onclick="prevSlide()">❮</div>
+  <div class="carousel-control next" onclick="nextSlide()">❯</div>
 </div>
 
 <script>
   let carouselIndex = 0;
-  const carouselSlides = document.querySelectorAll('.carousel img');
-  const totalSlides = carouselSlides.length;
+  const totalSlides = document.querySelectorAll('.carousel img').length;
 
   function nextSlide() {
     carouselIndex = (carouselIndex + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    carouselIndex = (carouselIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
   }
 
@@ -117,6 +123,7 @@
 
 </body>
 </html>
+  
          
 </script>
 
