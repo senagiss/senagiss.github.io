@@ -163,3 +163,20 @@ p {
   float: right; /* Esto coloca la imagen a la derecha */
   margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
 }
+/* Estilos para la imagen */
+header::before {
+  content: ""; /* Necesario para mostrar el pseudo-elemento */
+  background-image: url(titulo unico centro hdhdhdhd.png); /* Ruta de la imagen */
+  background-size: contain; /* Ajustar la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-position: center; /* Centrar la imagen */
+  display: inline-block;
+  width: 100px; /* Ancho deseado de la imagen */
+  height: 100px; /* Altura deseada de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilos para el título */
+header h1 {
+  display: inline-block; /* Permitir que el título se alinee al lado de la imagen */
+}
