@@ -61,7 +61,7 @@
 </body>
 </html>
           </ul>
-        <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -78,12 +78,11 @@
   
   .carousel {
     display: flex;
-    width: 100%; /* Ajusta el ancho según la cantidad de imágenes */
     transition: transform 0.5s ease;
   }
   
   .carousel img {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 
@@ -129,16 +128,20 @@
 
 <script>
   let carouselIndex = 0;
+  let rotationCount = 0;
   const totalSlides = document.querySelectorAll('.carousel img').length;
+  const maxRotations = 2;
 
   function nextSlide() {
     carouselIndex = (carouselIndex + 1) % totalSlides;
     updateCarousel();
+    checkRotation();
   }
 
   function prevSlide() {
     carouselIndex = (carouselIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
+    checkRotation();
   }
 
   function updateCarousel() {
@@ -146,12 +149,22 @@
     document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
   }
 
+  function checkRotation() {
+    if (carouselIndex === 0) {
+      rotationCount++;
+      if (rotationCount >= maxRotations) {
+        carouselIndex = 0;
+        rotationCount = 0;
+        updateCarousel();
+      }
+    }
+  }
+
   setInterval(nextSlide, 2000); // Cambia la imagen cada 2 segundos
 </script>
-
 </body>
 </html>
-  
+
          
 </script>
 
