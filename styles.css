@@ -163,15 +163,3 @@ p {
   float: right; /* Esto coloca la imagen a la derecha */
   margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
 }
-/* Estilos para la imagen */
-header::before {
-  content: "";
-  background-image: url(titulo unico centro hdhdhdhd.png); /* Ruta de la imagen */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  width: 50px; /* Ancho deseado de la imagen */
-  height: 40px; /* Altura deseada de la imagen */
-  margin: 0 auto 10px; /* Margen inferior de 10px y centrado horizontal */
-}
