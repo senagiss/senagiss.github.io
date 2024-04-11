@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,9 @@
 <style>
   .container {
     position: relative;
-    width: 300px; /* Ancho del contenedor, ajusta según sea necesario */
-    height: 200px; /* Alto del contenedor, ajusta según sea necesario */
+    width: 100px; /* Ancho del contenedor, ajusta según sea necesario */
+    height: 100px; /* Alto del contenedor, ajusta según sea necesario */
+    text-align: center; /* Para centrar la imagen */
   }
 
   .image {
@@ -21,13 +22,11 @@
   }
 
   .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    position: relative;
+    z-index: 1;
     color: white; /* Color del texto */
     font-size: 24px; /* Tamaño del texto */
+    line-height: 200px; /* Ajusta el line-height al alto del contenedor */
   }
 </style>
 </head>
@@ -41,7 +40,7 @@
 </body>
 </html>
 
-    <header>
+<header>
         <h1>SALUD PÚBLICA CFTHS</h1>
        <button id="menu-button"></button>
            </header>
