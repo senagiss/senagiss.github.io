@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imágenes en línea</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagen sobre el título</title>
+<style>
+  .container {
+    position: relative;
+    width: 300px; /* Ancho del contenedor, ajusta según sea necesario */
+    height: 200px; /* Alto del contenedor, ajusta según sea necesario */
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen se ajuste al contenedor sin deformarse */
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+  }
+</style>
 </head>
 <body>
-  <h1>Titulo</h1>
-  <div class="image-container">
-    <img src="" alt="" class="left">
-    <img src="imagen centro 777.png" alt="imagen centro 777.png" class="center">
-    <img src="" alt="" class="right">
-  </div>
+
+<div class="container">
+  <img src="imagen centro 777.png" alt="Imagen" class="image">
+  <h1 class="title">Título</h1>
+</div>
+
 </body>
 </html>
 
