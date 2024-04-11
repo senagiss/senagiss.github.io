@@ -69,19 +69,19 @@
 <style>
   /* Estilo para el carrusel */
   .carousel-container {
-    width: 80%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
   }
   
   .carousel {
     display: flex;
-    width: 100%; /* Ajusta el ancho según la cantidad de imágenes */
-    transition: transform 0.5s ease;
+    width: 50%; /* Ajusta el ancho según la cantidad de imágenes */
+    transition: transform 0.7s ease;
   }
   
   .carousel img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 </style>
@@ -112,7 +112,7 @@
     document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
   }
 
-  setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
+  setInterval(nextSlide, 2000); // Cambia la imagen cada 2 segundos
 </script>
 
 </body>
