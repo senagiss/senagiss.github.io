@@ -121,14 +121,7 @@
     <img src="carrucel 2.jpg" alt="Imagen 2">
     <img src="carrucel 3.jpg" alt="Imagen 3">
     <img src="carrucel 4.jpg" alt="Imagen 4">
-       <img src="carrucel 1.jpg" alt="Imagen 1">
-    <img src="carrucel 2.jpg" alt="Imagen 2">
-    <img src="carrucel 3.jpg" alt="Imagen 3">
-    <img src="carrucel 4.jpg" alt="Imagen 4">
-    <img src="carrucel 1.jpg" alt="Imagen 1">
-    <img src="carrucel 2.jpg" alt="Imagen 2">
-    <img src="carrucel 3.jpg" alt="Imagen 3">
-    <img src="carrucel 4.jpg" alt="Imagen 4">
+
   </div>
   <div class="carousel-control prev" onclick="prevSlide()">❮</div>
   <div class="carousel-control next" onclick="nextSlide()">❯</div>
@@ -136,39 +129,27 @@
 
 <script>
   let carouselIndex = 0;
-  let rotationCount = 0;
   const totalSlides = document.querySelectorAll('.carousel img').length;
-  const maxRotations = 2;
 
   function nextSlide() {
     carouselIndex = (carouselIndex + 1) % totalSlides;
     updateCarousel();
-    checkRotation();
   }
 
   function prevSlide() {
     carouselIndex = (carouselIndex - 1 + totalSlides) % totalSlides;
     updateCarousel();
-    checkRotation();
   }
 
   function updateCarousel() {
     const offset = carouselIndex * -100;
     document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
   }
+</script>
 
-  function checkRotation() {
-    if (carouselIndex === 0) {
-      rotationCount++;
-      if (rotationCount >= maxRotations) {
-        carouselIndex = 0;
-        rotationCount = 0;
-        updateCarousel();
-      }
-    }
-  }
+</body>
+</html>
 
-  setInterval(nextSlide, 2000); // Cambia la imagen cada 2 segundos
 </script>
 </body>
 </html>
