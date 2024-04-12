@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Tu Página Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="imagen_superior.jpg" alt="Imagen Superior">
+        <img src="imagen.jpg" alt="Imagen Principal">
+        <h1>Título de tu página</h1>
+        <p>Una frase descriptiva aquí</p>
     </header>
-    <nav>
-        <button id="menu-btn" class="dropdown-btn">Menú</button>
-        <div id="menu-content" class="dropdown-content">
-            <a href="#">Botón 1</a>
-            <a href="#">Botón 2</a>
-            <a href="#">Botón 3</a>
-            <a href="#">Botón 4</a>
-            <a href="#">Botón 5</a>
-            <a href="#">Botón 6</a>
-            <a href="#">Botón 7</a>
-            <a href="#">Botón 8</a>
-            <a href="#">Botón 9</a>
-            <a href="#">Botón 10</a>
-            <a href="#">Botón 11</a>
-        </div>
-    </nav>
-    <section class="content">
-        <h1>Título Principal</h1>
-        <p>Una frase aquí.</p>
+
+    <section id="carrusel">
         <div class="carousel">
             <img src="imagen1.jpg" alt="Imagen 1">
             <img src="imagen2.jpg" alt="Imagen 2">
-            <img src="imagen3.jpg" alt="Imagen 3">
-            <!-- Agrega las imágenes restantes aquí -->
+            <!-- Añade más imágenes según necesites -->
         </div>
-        <button id="prev-btn">Anterior</button>
-        <button id="next-btn">Siguiente</button>
+        <button id="prev">Anterior</button>
+        <button id="next">Siguiente</button>
     </section>
+
+    <nav>
+        <ul>
+            <li><button class="menu-btn">Botón 1</button></li>
+            <li><button class="menu-btn">Botón 2</button></li>
+            <li><button class="menu-btn">Botón 3</button></li>
+            <!-- Añade más botones según necesites -->
+        </ul>
+    </nav>
+
+    <div class="menu-content">
+        <div class="content" id="content1">
+            Contenido del botón 1
+        </div>
+        <div class="content" id="content2">
+            Contenido del botón 2
+        </div>
+        <div class="content" id="content3">
+            Contenido del botón 3
+        </div>
+        <!-- Añade más contenido según necesites -->
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
