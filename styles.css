@@ -179,7 +179,16 @@ p {
   transform: translateX(-100%);
 }
 
-.boton {
-    margin-right: 22px; /* Ajusta el margen derecho entre los botones */
-    margin-bottom: 22px; /* Ajusta el margen inferior entre los botones */
+.toggle-button {
+    background-color: #00324D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px; /* Ajusta el margen inferior entre los botones */
+}
+
+.toggle-button:hover {
+    background-color: #FFCE40;
 }
