@@ -39,16 +39,20 @@ const lastUpdatedElement = document.querySelector('#last-updated span');
 
 // Mostrar la fecha y hora de la última actualización
 lastUpdatedElement.textContent = obtenerFechaHoraActual();
-document.addEventListener("DOMContentLoaded", function() {
-    var buttons = document.querySelectorAll('.toggle-btn');
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var content = this.nextElementSibling;
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    });
-});
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width 0.3s ease-out, margin-left 0.3s ease-out;
+    margin-left: 0;
+}
+
+.content.show {
+    max-width: 200px; /* Ajusta el ancho deseado */
+    margin-left: 40px; /* Ajusta el desplazamiento hacia la derecha */
+}
