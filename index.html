@@ -220,3 +220,62 @@
         </ul>
     </nav>
 </header>
+</ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popup-noticias" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('noticias')">&times;</span>
+            <h2>Noticias</h2>
+            <!-- Contenido de Noticias -->
+        </div>
+    </div>
+
+    <div id="popup-acerca" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('acerca')">&times;</span>
+            <h2>Acerca de</h2>
+            <!-- Contenido de Acerca de -->
+        </div>
+    </div>
+
+    <div id="popup-servicios" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('servicios')">&times;</span>
+            <h2>Servicios</h2>
+            <!-- Contenido de Servicios -->
+        </div>
+    </div>
+
+    <div id="popup-contacto" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('contacto')">&times;</span>
+            <h2>Contacto</h2>
+            <!-- Contenido de Contacto -->
+        </div>
+    </div>
+
+    <div id="popup-mas" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('mas')">&times;</span>
+            <h2>Más</h2>
+            <!-- Contenido de Más -->
+        </div>
+    </div>
+
+    <script>
+        function showPopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "block";
+        }
+
+        function closePopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
