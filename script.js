@@ -52,7 +52,7 @@ lastUpdatedElement.textContent = obtenerFechaHoraActual();
     margin-left: 0;
 }
 
-.content.show {
+.toggle-btn:focus + .content {
     max-width: 200px; /* Ajusta el ancho deseado */
-    margin-left: 40px; /* Ajusta el desplazamiento hacia la derecha */
+    margin-left: 20px; /* Ajusta el desplazamiento hacia la derecha */
 }
