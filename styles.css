@@ -165,3 +165,6 @@ p {
   margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
 }
 
+.content {
+    display: none;
+}
