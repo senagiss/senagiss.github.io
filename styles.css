@@ -179,3 +179,7 @@ p {
   transform: translateX(-100%);
 }
 
+.boton {
+    margin-right: 2px; /* Ajusta el margen derecho entre los botones */
+    margin-bottom: 2px; /* Ajusta el margen inferior entre los botones */
+}
