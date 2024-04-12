@@ -186,7 +186,7 @@ p {
     padding: 10px 20px;
     cursor: pointer;
     display: block;
-    margin-bottom: 1px; /* Ajusta el margen inferior entre los botones */
+    margin-bottom: 50px; /* Ajusta el margen inferior entre los botones */
 }
 
 .toggle-button:hover {
