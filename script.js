@@ -40,19 +40,4 @@ const lastUpdatedElement = document.querySelector('#last-updated span');
 // Mostrar la fecha y hora de la última actualización
 lastUpdatedElement.textContent = obtenerFechaHoraActual();
 
-.menu {
-    display: flex;
-    flex-direction: column;
-}
 
-.content {
-    overflow: hidden;
-    max-width: 0;
-    transition: max-width 0.3s ease-out, margin-left 0.3s ease-out;
-    margin-left: 0;
-}
-
-.toggle-btn:focus + .content {
-    max-width: 200px; /* Ajusta el ancho deseado */
-    margin-left: 20px; /* Ajusta el desplazamiento hacia la derecha */
-}
