@@ -142,6 +142,41 @@
             <li><a href="#" onclick="showPopup('contacto')">✉️ Contacto</a></li>
             <li>
                 <a href="#" onclick="showPopup('mas')">>Más</a>
+                </ul>
+        </nav>
+    </header>
+
+    <div id="popup-servicios" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('servicios')">&times;</span>
+            <h2>Servicios</h2>
+            <p>Aquí puedes agregar texto sobre tus servicios.</p>
+            <p>Puedes describir en detalle qué tipo de servicios ofreces.</p>
+        </div>
+    </div>
+
+    <div id="popup-mas" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('mas')">&times;</span>
+            <h2>Más</h2>
+            <p>Aquí puedes agregar más información sobre tu página.</p>
+            <p>Por ejemplo, puedes agregar un enlace a tu blog o a tus preguntas frecuentes.</p>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "block";
+        }
+
+        function closePopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
                 <ul class="submenu">
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">FAQ</a></li>
