@@ -39,3 +39,16 @@ const lastUpdatedElement = document.querySelector('#last-updated span');
 
 // Mostrar la fecha y hora de la última actualización
 lastUpdatedElement.textContent = obtenerFechaHoraActual();
+document.addEventListener("DOMContentLoaded", function() {
+    var buttons = document.querySelectorAll('.toggle-btn');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var content = this.nextElementSibling;
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    });
+});
