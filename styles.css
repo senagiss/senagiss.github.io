@@ -165,4 +165,17 @@ p {
   margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
 }
 
+#contentWrapper {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+#content {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#content.hidden {
+  transform: translateX(-100%);
+}
 
