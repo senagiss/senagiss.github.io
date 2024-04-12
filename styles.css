@@ -73,3 +73,6 @@ li a {
 p {
     text-align: justify;
 }
+#titulo {
+    color: white; /* Cambia "white" al color que desees */
+}
