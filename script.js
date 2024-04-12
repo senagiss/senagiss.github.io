@@ -39,6 +39,6 @@ const lastUpdatedElement = document.querySelector('#last-updated span');
 
 // Mostrar la fecha y hora de la última actualización
 lastUpdatedElement.textContent = obtenerFechaHoraActual();
-}
+
 
 
