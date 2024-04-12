@@ -164,3 +164,7 @@ p {
   float: right; /* Esto coloca la imagen a la derecha */
   margin-left: 10px; /* Agrega un pequeño margen a la izquierda para separar las imágenes */
 }
+body {
+    background-image: url('doc fondo 2024.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+}
