@@ -63,7 +63,13 @@ nav ul li a:hover {
     right: 10px;
     cursor: pointer;
 }
-
+.content p {
+    text-align: justify;
 }
+li a {
+    text-decoration: none;
+}
+
 p {
     text-align: justify;
+}
