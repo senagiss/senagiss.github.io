@@ -120,38 +120,56 @@
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Horizontal</title>
+    <title>Menú con Popups</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
-<header>
-    <h1>Bienvenido a mi Página</h1>
-    <nav>
-        <ul>
-             <main>
-            <li><a href="#">🏠 Inicio</a></li>
-            <li><a href="#">👨‍💼 Acerca de</a></li>
-            
-            <li><a href="#">🛠️ Servicios</a>
-                <ul class="submenu">
-                    <li><a href="#">Diseño Web</a></li>
-                    <li><a href="#">Desarrollo de Aplicaciones</a></li>
-                    <li><a href="#">Marketing Digital</a></li>
-                </ul>
-            </li>
-            <li><a href="#">✉️ Contacto</a></li>
-            <li>
-                <a href="#">Más</a>
-                <ul class="submenu">
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Bienvenido a mi Página</h1>
+        <nav>
+            <ul>
+                <li><a href="#">🏠 Inicio</a></li>
+                <li><a href="#">👨‍💼 Acerca de</a></li>
+                
+                <li><a href="#" onclick="showPopup('servicios')">🛠️ Servicios</a></li>
+                <li><a href="#">✉️ Contacto</a></li>
+                <li><a href="#" onclick="showPopup('mas')">Más</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popup-servicios" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('servicios')">&times;</span>
+            <h2>Servicios</h2>
+            <p>Aquí puedes agregar texto sobre tus servicios.</p>
+            <p>Puedes describir en detalle qué tipo de servicios ofreces.</p>
+        </div>
+    </div>
+
+    <div id="popup-mas" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('mas')">&times;</span>
+            <h2>Más</h2>
+            <p>Aquí puedes agregar más información sobre tu página.</p>
+            <p>Por ejemplo, puedes agregar un enlace a tu blog o a tus preguntas frecuentes.</p>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "block";
+        }
+
+        function closePopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
