@@ -179,16 +179,3 @@ p {
   transform: translateX(-100%);
 }
 
-.toggle-button {
-    background-color: #00324D;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    margin-bottom: 50px; /* Ajusta el margen inferior entre los botones */
-}
-
-.toggle-button:hover {
-    background-color: #FFCE40;
-}
