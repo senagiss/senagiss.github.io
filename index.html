@@ -141,6 +141,29 @@
                 </ul>
         </nav>
     </header>
+     <div id="popup" class="popup">
+        <!-- Contenido de las ventanas emergentes -->
+    </div>
+
+    <script>
+        function showPopup(content) {
+            var popup = document.getElementById("popup");
+            popup.innerHTML = "Contenido de " + content; // Aquí puedes cambiar para mostrar el contenido adecuado según el enlace clicado
+            popup.style.display = "block";
+
+            // Cerrar la ventana emergente si se hace clic fuera de ella
+            window.onclick = function(event) {
+                if (event.target !== popup && !popup.contains(event.target)) {
+                    popup.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+          </ul>
+        </nav>
+    </header>
      <div id="popup-noticias" class="popup">
         <div class="popup-content">
               <span class="close" onclick="closePopup('noticias')">&times;</span>
