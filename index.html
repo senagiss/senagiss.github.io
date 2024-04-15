@@ -417,10 +417,10 @@
 </head>
 <body>
     <ul>
-        <li><a href="#" onclick="toggleSalud Pública Avanzada(event)">Salud Pública Avanzada</a></li>
+        <li><a href="#" onclick="toggleSaludPúblicaAvanzada(event)">Salud Pública Avanzada</a></li>
     </ul>
 
-    <div id="Salud Pública AvanzadaContent" class="hidden">
+    <div id="Salud PúblicaAvanzadaContent" class="hidden">
          <p><strong>INTRODUCCIÓN</strong></p>
         <p>•La salud pública es un campo vital que se enfoca en promover y proteger la salud de las comunidades. Aborda desafíos como enfermedades infecciosas, salud ambiental y acceso a la atención médica. Utiliza estrategias de prevención, educación y políticas para mejorar la salud y el bienestar de la población en general.</p>
                         <hr> <!-- Línea divisoria -->
@@ -447,13 +447,13 @@
     </div>
 
     <script>
-        function toggleSalud Pública Avanzada(event) {
+        function toggleSaludPúblicaAvanzada(event) {
             event.preventDefault();
-            var NosotrosContent = document.getElementById("Salud Pública AvanzadaContent");
-            if (Salud Pública AvanzadaContent.style.display === "none") {
-                Salud Pública AvanzadaContent.style.display = "block";
+            var NosotrosContent = document.getElementById("SaludPúblicaAvanzadaContent");
+            if (SaludPúblicaAvanzadaContent.style.display === "none") {
+                SaludPúblicaAvanzadaContent.style.display = "block";
             } else {
-                Salud Pública AvanzadaContent.style.display = "none";
+                SaludPúblicaAvanzadaContent.style.display = "none";
             }
         }
     </script>
