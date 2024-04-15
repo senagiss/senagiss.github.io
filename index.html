@@ -126,28 +126,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú con Popups</title>
-    <style>
-        /* Estilos CSS aquí */
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showPopup('noticias')">📰 Noticias</a></li>
-                <li><a href="#" onclick="showPopup('tips para la salud')">🩺 Tips para la salud</a></li>
-                <li><a href="#" onclick="showPopup('educación y prevención')">👨‍⚕️📚👩‍⚕️ Educación y Prevención</a></li>
+    <link rel="stylesheet" href="styles.css">
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPopup('noticias')">📰 Noticias</a></li>
+            <li><a href="#" onclick="showPopup('tips para la salud')">🩺 Tips para la salud</a></li>
+            <li><a href="#" onclick="showPopup('educación y prevención')">👨‍⚕️📚👩‍⚕️ Educación y Prevención</a>
                 <li><a href="#" onclick="showPopup('vacunación')">💉 Vacunación</a></li>
-                <li><a href="#" onclick="showPopup('salud sexual y reproductiva')">👶 Salud Sexual y Reproductiva</a></li>
-                <li><a href="#" onclick="showPopup('tendencias')">👨‍⚕🌐🧬 Tendencias</a></li>
-                <li><a href="#" onclick="showPopup('normatividad')">📝Normatividad</a></li>
-            </ul>
+             <li><a href="#" onclick="showPopup('salud sexual y reproductiva')">👶 Salud Sexual y Reproductiva</a></li>
+             <li><a href="#" onclick="showPopup('tendencias')">👨‍⚕🌐🧬 Tendencias</a></li>
+            <li><a href="#" onclick="showPopup('normatividad')">📝Normatividad</a>
+                </ul>
         </nav>
     </header>
-
-    <div id="popup-noticias" class="popup" style="display: none;">
-        <!-- Contenido del popup de noticias -->
-         <h2>Noticias</h2>
+         <div id="popup-noticias" class="popup">
+        <div class="popup-content">
+              <span class="close" onclick="closePopup('noticias')">&times;</span>
+            <h2>Noticias</h2>
              <p style="text-align: center;"><strong>
 "Nuestra sección de noticias se centra en diversas páginas web en línea para ofrecerte una perspectiva completa. ¡Explora y mantente informado!"</strong></p>
              <p></p><strong>"Las últimas noticias que impactan a Colombia"</strong></p> 
@@ -187,34 +183,329 @@
              <p><strong>El Pais. (2024). Sanidad acepta casi 150 alegaciones de las comunidades para sacar adelante el plan antitabaco. https://elpais.com/.</strong></p>
                    <a href="https://elpais.com/" style="color: blue;">Ir a El País</a>
         </div>
+        </div>
+    <div id="popup-tips para la salud" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('tips para la salud')">&times;</span>
+            <h2>TIPS PARA LA SALUD</h2>
+             <p><strong>Sabias que?...</strong></p>  
+                  <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->
+                <p> • Mantener una dieta equilibrada rica en frutas, verduras, granos enteros y proteínas magras es fundamental para una vida saludable.
+                <p> • Hacer ejercicio regularmente ayuda a fortalecer el cuerpo y mantener un peso saludable.
+                <p> • Dormir lo suficiente es esencial para la recuperación y el bienestar mental y físico.
+                <p> • Mantenerse hidratado bebiendo suficiente agua a lo largo del día es importante para el funcionamiento adecuado del cuerpo.
+                <p> • Evitar el consumo de tabaco y limitar el consumo de alcohol contribuye a una mejor salud.
+                <p> • Controlar el estrés y practicar técnicas de relajación, como la meditación o el yoga, puede mejorar la salud mental.
+                <p> • Mantener una buena higiene personal, como lavarse las manos regularmente, ayuda a prevenir enfermedades.
+                <p> • Hacer revisiones médicas periódicas y seguir el consejo de profesionales de la salud es clave para la prevención y detección temprana de enfermedades.
+                <p> • Evitar el sedentarismo y buscar actividades que promuevan el movimiento, como caminar o bailar, es importante para la salud cardiovascular.
+                <p> • Cultivar relaciones sociales positivas y buscar el apoyo de amigos y familiares puede mejorar la salud emocional y el bienestar general.
+            <p><strong>OpenAI. (2024). OpenAI. https://chat.openai.com/</strong></p>
+        </div>
+        </div>
+    <div id="popup-educación y prevención" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('educación y prevención')">&times;</span>
+            <h2>Educación y Prevención</h2>
+              <p><strong>Sabias que?...</strong></p>
+             <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->
+                <p><strong> Las enfermedades transmisibles.</strong></p>
+              <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->
+                <p> Conocidas como enfermedades infecciosas o contagiosas, son aquellas causadas por microorganismos como bacterias, virus, hongos, parásitos o priones, que se pueden transmitir de una persona a otra, de animales a personas o a través del medio ambiente. Estas enfermedades pueden propagarse a través del contacto directo con personas infectadas, mediante la ingestión de alimentos o agua contaminados, por picaduras de insectos vectores, por la inhalación de gotas respiratorias en el aire, entre otras vías de transmisión.          
+                 <p> • Covid -19
+                 <p> • IRA.
+                 <p> • Malaria.
+                 <p> • Lepra.
+                 <p> • Ébola.
+                 <p> • Hepatitis.
+                 <p> • Sarampión.
+                 <p> • Tuberculosis.
+                 <p> • Chagas.
+                 <p> • Aedes aegypti.
+                 <p> • Toxoplasmosis.
+                  <p> • VIH.
+                 <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->
+                       <hr> <!-- Línea divisoria -->
+                <p><strong>Prevención de enfermedades no transmisibles.</strong></p>
+             <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->      
+            </p> Las enfermedades no transmisibles (ENT) conocidas también como enfermedades crónicas, son afecciones de larga duración con una progresión generalmente lenta. Los cuatro tipos principales son​: 
+                 <p> • Las enfermedades cardiovasculares como los infartos de miocardio, el ataque cerebrovascular​ y la hipertensión arterial.
+                 <p> • Los diferentes tipos de cáncer. 
+                 <p> • Las enfermedades respiratorias crónicas como la neumopatía obstructiva crónica o el asma.
+                 <p> • La diabetes​.
+                 <p> Estas enfermedades son la causa de defunción más importante en el mundo, pues representan en su conjunto el 70% del número total de muertes anuales; comparten factores de riesgo comunes que incluyen la exposición y consumo del humo del tabaco y sus derivados, la inactividad física, el uso nocivo del alcohol y la dieta no saludable. Las ENT se pueden prevenir y controlar a través de cambios en el estilo de vida, intervenciones de salud y políticas públicas costo-efectivas y requieren un abordaje intersectorial e integrado.
+                 <p><strong> Minsalud. (2024). Prevencion de enfermedades transmisibles y no transmisibles. www.minsalud.gov.co/ </strong></p> 
+         </div>
     </div>
-    <!-- Otros popups aquí -->
 
-    <ul class="submenu">
-        <!-- Contenido del submenu -->
-    </ul>
+    <div id="popup-vacunación" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('vacunación')">&times;</span>
+            <h2>Vacunación</h2>
+            <p><strong>Sabias que?...</strong></p>
+                    <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->   
+                <p> • Las vacunas incluidas en el esquema nacional de vacunación, son gratuitas para todos los niños menores de 6 años de edad. Para tener acceso a ellas, pueden dirigirse al punto de vacun​ación m​ás cercano. 
+            <p> • Las vacunas incluidas en el esquema nacional de vacunación son seguras y eficaces, razón por la cual cuentan con el apoyo de la Sociedad Colombiana de Pediatría.
+                 <p> • No olvide llevar el carné de vacunación si por alguna razón no lo tiene, debe acudir al punto de vacunación más cercano para que se revise su caso de manera particular.​
+                   <p> Las Instituciones prestadoras de servicios de salud (IPS) y las Entidades promotoras de salud (EPS) deberán tener en cuenta los objetivos establecidos dentro de los lineamientos para la vacunación durante 2020:​
+                  <p> • Intensificar la vacunación infantil en los niños y niñas de 0 a 5 años 11 meses 29 días
+                  <p> • Iniciar, continuar y completar los esquemas y refuerzos de las vacunas, a todos los niños y niñas menores de 6 años.
+                  <p> • Vacunar al total de la población infantil entre 6 y 23 meses contra la influe​nza.
+                  <p> • Vacunar al total de la población de 60 años y más con una dosis de vacuna contra la influenza y a otra población definida por MinSalud, entre otros los pacientes con tratamiento de diálisis y hemodiálisis.
+                  <p> • Garantizar la aplicación de la vacunación anual contra Influenza a los familiares y convivientes de la población menor de 18 años con cáncer, las cuales se suministrarán en la Unidad de Cáncer Infantil, en cumplimiento de la Ley 1388 de 2010
+                  <p> • Vacunar al total de mujeres en segundo y tercer trimestre de gestación con una dosis contra influenza.
+                  <p> • Vacunar al total de mujeres a partir de la semana 26 de gestación con una dosis de vacuna de TdaP (tétanos, difteria y tos ferina).
+                  <p> • Vacunar a la población de niñas escolarizadas en cuarto grado de básica primaria, que hayan cumplido nueve años y más de edad, y a las niñas no escolarizada de nueve a 17 años de edad, contra el virus del papiloma humano (VPH).
+                 <p><strong> Minsalud. (2024).Vacunacion. www.minsalud.gov.co/ </strong></p> 
+        </div>
+    </div>
+<div id="popup-salud sexual y reproductiva" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('salud sexual y reproductiva')">&times;</span>
+            <h2>Salud sexual y Reproductiva</h2>
+            <p><strong>Sabias que?...</strong></p>
+                    <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->   
+                 <p><strong>Sabias que?...</strong></p>
+                      <p> ​El Ministerio de Salud y Protección Social considera la sexualidad como una dimensión prioritaria en el curso de la vida de las personas. Se espera que su ejercicio se enmarque en la práctica de los Derechos Humanos y la garantía de los derechos Sexuales y los Derechos Reproductivos. En Colombia aún tenemos muchas problemáticas asociadas a la sexualidad y a la reproducción, pero cada vez más el Estado, las instituciones y las políticas que se desarrollan tienen avances importantes en la comprensión de las diferentes miradas de la sexualidad y sus abordajes. Esto se refleja en la incorporación de los enfoques de género, derechos y diferencial como aspectos esenciales para el logro de una salud sexual y reproductiva plena, segura, digna y responsable para todas las personas en Colombia.  ​
+                 <p> • Sexualidad y derechos.
+                 <p> • Violencia de genero.
+                  <p> • Salud materna.
+                  <p> • Anticoncepción.
+                  <p> • Infecciones de transmición sexual.
+                  <p> • Prevencion aborto inseguro/Interrupción voluntaria del embarazo.
+                      <p><strong> Minsalud. (2024).Salud sexual y Reproductiva. www.minsalud.gov.co/ </strong></p> 
+               </div>
+    </div>
+    <div id="popup-tendencias" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('tendencias')">&times;</span>
+            <h2>Tendencias</h2>
+              <p><strong>SIMULACIÓN Y REALIDAD VIRTUAL EN PROCESOS DE ENSEÑANZA - APRENDIZAJE EN LA FORMACIÓN EN SALUD.</strong></p>  
+             <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->   
+                <p>Este artículo explora el impacto de la IA En  la  última  década,  la  simulación  se  ha  estado  incorporando en la formación de los profesionales de la salud como estrategia pedagógica a nivel mundial; debido a los resultados de numerosas investigaciones, las cuales han demostrado que las habilidades clínicas, de comunicación y trabajo en equipo, así como las actitudes y el profesionalismo  aprendidos  mediante  formación  con  simulación,  se  trasladan  al  entorno  de  trabajo  de  modo  más  eficaz  que  cuando  se  comparan  con  los  métodos  tradicionales  (Opazo et al., 2017.)
+                  <p>Con respecto a lo anterior, en Europa los estudiantes han percibido  un  incremento  de  sus  habilidades  en  la  práctica  mediante  el  uso  de  la  simulación  en  sus  procesos  formativos debido al estímulo visual, auditivo y táctil que les permite estar inmersos en un ambiente que se apro-xima a la realidad (Martínez, 2015). Así mismo, se resalta el potencial para simular situaciones en diversos campos del mundo real, particularmente en el campo de la educación, donde sus características de inmersión, aprendizaje en primera persona, interacción no simbólica son de gran ayuda  en  los  procesos  de  enseñanza  -  aprendizaje  (Ur-quiza,2016)
+<p> <strong>Revista de innovación Sennova </strong></p> 
+             <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion..PDF</title>
+</head>
+<body>
+    <p><a href="Simulacion.pdf" download>Simulacion..PDF</a></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+</head>
+<body>
+    <h2>Imagen</h2>
+    <img src="vr ima.jpg" alt="Descripción de la imagen">
+</body>
+</html>
+ </p>https://tediselmedical.com/
+                  </div>
+     </div>
+    <div id="popup-normatividad" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('normatividad')">&times;</span>
+            <h2>Normatividad</h2>
+            <p><strong>Normatividad sector salud</strong></p>
+                  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decreto-786-de-1990-Necropsias.PDF</title>
+</head>
+<body>
+    <p><a href="Decreto-786-de-1990-Necropsias.pdf" download>Decreto-786-de-1990-Necropsias .PDF</a></p>
+</body>
+</html>
+                <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley-100-de-1993-Ley-SGSSS.PDF</title>
+</head>
+<body>
+    <p><a href="Ley-100-de-1993-Ley-SGSSS.pdf" download>Ley-100-de-1993-Ley-SGSSS.PDF</a></p>
+</body>
+</html>
+                <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley-1090-de-2006-Reglamentación-de-la-psicología.PDF</title>
+</head>
+<body>
+    <p><a href="Ley-1090-de-2006-Reglamentación-de-la-psicología.pdf" download>Ley-1090-de-2006-Reglamentación-de-la-psicología.PDF</a></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEY-1164-DE-2007-Ley-de-Talento-Humano-en-Salud.PDF</title>
+</head>
+<body>
+    <p><a href="LEY-1164-DE-2007-Ley-de-Talento-Humano-en-Salud.pdf" download>LEY-1164-DE-2007-Ley-de-Talento-Humano-en-Salud.PDF</a></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley-1733-de-2014-Cuidados-Paliativos.PDF</title>
+</head>
+<body>
+    <p><a href="Ley-1733-de-2014-Cuidados-Paliativos.pdf" download>Ley-1733-de-2014-Cuidados-Paliativos.PDF</a></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolución No 100 de 2024.pdf</title>
+</head>
+<body>
+    <p><a href="Resolución No 100 de 2024.pdf" download>Resolución No 100 de 2024.PDF</a></p>
+</body>
+</html>
+ <p>https://scare.org.co/
 
-    <div id="BlogContent" class="hidden">
-        <!-- Contenido del blog -->
+        </div>
     </div>
 
     <script>
-        // Función para mostrar el popup
         function showPopup(id) {
             var popup = document.getElementById("popup-" + id);
-            if (popup) {
-                popup.style.display = "block";
-                // Agregar un evento de escucha para cerrar el popup al hacer clic fuera de él
-                document.addEventListener('click', function(event) {
-                    var isClickInsidePopup = popup.contains(event.target);
-                    if (!isClickInsidePopup) {
-                        popup.style.display = 'none';
-                    }
-                });
+            popup.style.display = "block";
+        }
+
+        function closePopup(id) {
+            var popup = document.getElementById("popup-" + id);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+                <ul class="submenu">
+                    <p style="text-align: center;"><strong>"¡Bienvenido a nuestra página de Salud Pública! Encuentra consejos y recursos para una vida más saludable. ¡Comienza tu viaje hacia el bienestar hoy!"</strong></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Blog</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="toggleBlog(event)">Blog</a></li>
+    </ul>
+
+    <div id="BlogContent" class="hidden">
+         <p><strong>Introducción</strong></p>
+        <p>•La salud pública es un campo vital que se enfoca en promover y proteger la salud de las comunidades. Aborda desafíos como enfermedades infecciosas, salud ambiental y acceso a la atención médica. Utiliza estrategias de prevención, educación y políticas para mejorar la salud y el bienestar de la población en general.</p>
+                        <hr> <!-- Línea divisoria -->
+                     <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                      <p><strong>Salud Digital y Tecnología Sanitaria</strong></p>
+                     <p>El uso de tecnologías digitales como aplicaciones móviles, dispositivos portátiles y plataformas en línea está transformando la forma en que se entrega la atención médica y se promueve la salud pública.
+     </div>
+    <script>
+        function toggleBlog(event) {
+            event.preventDefault();
+            var BlogContent = document.getElementById("BlogContent");
+            if (BlogContent.style.display === "none") {
+                BlogContent.style.display = "block";
+            } else {
+                BlogContent.style.display = "none";
             }
         }
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Salud Pública Avanzada</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="toggleSaludPúblicaAvanzada(event)">Salud Pública Avanzada</a></li>
+    </ul>
 
+    <div id="SaludPúblicaAvanzadaContent" class="hidden">
+         <p><strong>Introducción</strong></p>
+        <p>•La salud pública es un campo vital que se enfoca en promover y proteger la salud de las comunidades. Aborda desafíos como enfermedades infecciosas, salud ambiental y acceso a la atención médica. Utiliza estrategias de prevención, educación y políticas para mejorar la salud y el bienestar de la población en general.</p>
+                        <hr> <!-- Línea divisoria -->
+                     <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                      <p><strong>Salud Digital y Tecnología Sanitaria</strong></p>
+                     <p>El uso de tecnologías digitales como aplicaciones móviles, dispositivos portátiles y plataformas en línea está transformando la forma en que se entrega la atención médica y se promueve la salud pública.
+ <hr> <!-- Línea divisoria -->
+                         <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                          <p><strong>Epidemiología Genómica</strong></p>
+                     <p>La secuenciación del genoma está revolucionando nuestra comprensión de las enfermedades infecciosas y crónicas, permitiendo un mejor rastreo de brotes, identificación de factores de riesgo genéticos y desarrollo de tratamientos personalizados.
+                      <hr> <!-- Línea divisoria -->
+                          <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                         <p><strong>Salud Global y Preparación para Emergencias</strong></p>
+                     <p>Los desafíos globales de salud, como pandemias, cambio climático y desastres naturales, están impulsando una mayor colaboración internacional y un enfoque más coordinado en la preparación y respuesta a emergencias de salud pública.
+                           <hr> <!-- Línea divisoria -->
+                          <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                          <p><strong>Equidad en Salud y Determinantes Sociales</strong></p>
+                     <p>Hay un creciente reconocimiento de la importancia de abordar los determinantes sociales de la salud, como la pobreza, la educación y el acceso a la atención médica, para lograr una mayor equidad en salud y reducir las disparidades en el acceso y los resultados de salud.
+                          <hr> <!-- Línea divisoria -->
+                          <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                           <p><strong>Salud Mental y Bienestar</strong></p>
+                      <p> La salud mental está recibiendo una mayor atención en el ámbito de la salud pública, con un enfoque en la prevención, detección temprana y tratamiento de trastornos mentales, así como en la promoción del bienestar emocional y psicológico en la comunidad.
+                   
+    </div>
+
+    <script>
+        function toggleSaludPúblicaAvanzada(event) {
+            event.preventDefault();
+            var SaludPúblicaAvanzadaContent = document.getElementById("SaludPúblicaAvanzadaContent");
+            if (SaludPúblicaAvanzadaContent.style.display === "none") {
+                SaludPúblicaAvanzadaContent.style.display = "block";
+            } else {
+                SaludPúblicaAvanzadaContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+                   
+                    <hr> <!-- Línea divisoria -->
+                         
+                         <li><a href="#" style="pointer-events: none; cursor: default;">Preguntas Frecuentes</a></li>
+                          <hr> <!-- Línea divisoria -->
+                 <li><a href="#" style="pointer-events: none; cursor: default;">Contacto</a></li>
+                     <p>gisssennova@gmail.com - Rafael Mesa Cel:3204162492 - Horario de Atención - Lunes a Viernes 8:30.Am - 4:30 PM</p>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 
