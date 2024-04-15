@@ -126,7 +126,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú con Popups</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Agregar el enlace al archivo CSS de estilos -->
+    <style>
+        /* Estilos CSS aquí */
+    </style>
 </head>
 <body>
     <header>
@@ -143,9 +145,7 @@
         </nav>
     </header>
 
-    <div id="popup-noticias" class="popup">
-         <div class="popup-content">
-              <span class="close" onclick="closePopup('noticias')">&times;</span>
+    <div id="popup-noticias" class="popup" style="display: none;">
         <!-- Contenido del popup de noticias -->
          <h2>Noticias</h2>
              <p style="text-align: center;"><strong>
@@ -186,7 +186,6 @@
            <p>Quede como quede el texto, será un preámbulo para poder tomar medidas efectivas, que llegarán mediante una legislación que se tendrá que basar en el texto que finalmente se apruebe. Algunas de las medidas más controvertidas quedan en el aire. El documento, al que ha tenido acceso este periódico, no concreta si se vetará el tabaco en terrazas o en vehículos particulares. En este sentido, la literalidad de la estrategia se limita a lo siguiente: “Ampliación legislativa de los espacios sin humo de tabaco y sin aerosoles de cigarrillos electrónicos y productos relacionados en determinados ambientes comunitarios y sociales al aire libre y en ciertos espacios del ámbito privado, especialmente aquellos con presencia de menores”.</p>
              <p><strong>El Pais. (2024). Sanidad acepta casi 150 alegaciones de las comunidades para sacar adelante el plan antitabaco. https://elpais.com/.</strong></p>
                    <a href="https://elpais.com/" style="color: blue;">Ir a El País</a>
-
         </div>
     </div>
     <!-- Otros popups aquí -->
@@ -203,14 +202,16 @@
         // Función para mostrar el popup
         function showPopup(id) {
             var popup = document.getElementById("popup-" + id);
-            popup.style.display = "block";
-            // Agregar un evento de escucha para cerrar el popup al hacer clic fuera de él
-            document.addEventListener('click', function(event) {
-                var isClickInsidePopup = popup.contains(event.target);
-                if (!isClickInsidePopup) {
-                    popup.style.display = 'none';
-                }
-            });
+            if (popup) {
+                popup.style.display = "block";
+                // Agregar un evento de escucha para cerrar el popup al hacer clic fuera de él
+                document.addEventListener('click', function(event) {
+                    var isClickInsidePopup = popup.contains(event.target);
+                    if (!isClickInsidePopup) {
+                        popup.style.display = 'none';
+                    }
+                });
+            }
         }
     </script>
 </body>
