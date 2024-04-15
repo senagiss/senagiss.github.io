@@ -403,7 +403,7 @@
 </html>
                 <ul class="submenu">
                     <p style="text-align: center;"><strong>"¡Bienvenido a nuestra página de Salud Pública! Encuentra consejos y recursos para una vida más saludable. ¡Comienza tu viaje hacia el bienestar hoy!"</strong></p>
-                     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -417,11 +417,11 @@
 </head>
 <body>
     <ul>
-        <li><a href="#" onclick="toggleBlog()">Blog</a></li>
+        <li><a href="#" onclick="toggleBlog(event)">Blog</a></li>
     </ul>
 
     <div id="blogContent" class="hidden">
-       <p><strong>INTRODUCCIÓN</strong></p>
+         <p><strong>INTRODUCCIÓN</strong></p>
         <p>•La salud pública es un campo vital que se enfoca en promover y proteger la salud de las comunidades. Aborda desafíos como enfermedades infecciosas, salud ambiental y acceso a la atención médica. Utiliza estrategias de prevención, educación y políticas para mejorar la salud y el bienestar de la población en general.</p>
                         <hr> <!-- Línea divisoria -->
                      <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
@@ -443,21 +443,23 @@
                           <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
                            <p><strong>Salud Mental y Bienestar</strong></p>
                       <p> La salud mental está recibiendo una mayor atención en el ámbito de la salud pública, con un enfoque en la prevención, detección temprana y tratamiento de trastornos mentales, así como en la promoción del bienestar emocional y psicológico en la comunidad.
-                    
+                   
     </div>
 
     <script>
-        function toggleBlog() {
+        function toggleBlog(event) {
+            event.preventDefault();
             var blogContent = document.getElementById("blogContent");
-            if (blogContent.classList.contains("hidden")) {
-                blogContent.classList.remove("hidden");
+            if (blogContent.style.display === "none") {
+                blogContent.style.display = "block";
             } else {
-                blogContent.classList.add("hidden");
+                blogContent.style.display = "none";
             }
         }
     </script>
 </body>
 </html>
+                   
                     <hr> <!-- Línea divisoria -->
                          
                          <li><a href="#" style="pointer-events: none; cursor: default;">Preguntas Frecuentes</a></li>
