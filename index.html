@@ -399,28 +399,35 @@
             popup.style.display = "none";
         }
     </script>
-    <script>
+ <script>
     // Función para mostrar el contenido emergente
     function showPopup(id) {
         var popup = document.getElementById("popup-" + id);
         popup.style.display = "block";
 
         // Agregar un evento de clic al documento para cerrar el contenido emergente si se hace clic fuera de él
-        document.addEventListener('click', function(event) {
-            var isClickInsidePopup = popup.contains(event.target);
-            if (!isClickInsidePopup) {
-                closePopup(id);
-            }
-        });
+        document.addEventListener('click', closePopupOutside);
     }
 
     // Función para cerrar el contenido emergente
     function closePopup(id) {
         var popup = document.getElementById("popup-" + id);
         popup.style.display = "none";
+
+        // Eliminar el evento de clic del documento
+        document.removeEventListener('click', closePopupOutside);
+    }
+
+    // Función para cerrar el contenido emergente si se hace clic fuera de él
+    function closePopupOutside(event) {
+        var popups = document.querySelectorAll('.popup');
+        popups.forEach(function(popup) {
+            if (!popup.contains(event.target)) {
+                popup.style.display = "none";
+            }
+        });
     }
 </script>
-
 </body>
 </html>
                 <ul class="submenu">
