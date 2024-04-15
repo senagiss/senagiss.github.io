@@ -408,6 +408,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Blog</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="toggleBlog(event)">Blog</a></li>
+    </ul>
+
+    <div id="BlogContent" class="hidden">
+         <p><strong>Introducción</strong></p>
+        <p>•La salud pública es un campo vital que se enfoca en promover y proteger la salud de las comunidades. Aborda desafíos como enfermedades infecciosas, salud ambiental y acceso a la atención médica. Utiliza estrategias de prevención, educación y políticas para mejorar la salud y el bienestar de la población en general.</p>
+                        <hr> <!-- Línea divisoria -->
+                     <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo --> 
+                      <p><strong>Salud Digital y Tecnología Sanitaria</strong></p>
+                     <p>El uso de tecnologías digitales como aplicaciones móviles, dispositivos portátiles y plataformas en línea está transformando la forma en que se entrega la atención médica y se promueve la salud pública.
+     </div>
+    <script>
+        function toggleBlog(event) {
+            event.preventDefault();
+            var BlogContent = document.getElementById("BlogContent");
+            if (BlogContent.style.display === "none") {
+                BlogContent.style.display = "block";
+            } else {
+                BlogContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggle Salud Pública Avanzada</title>
     <style>
         .hidden {
