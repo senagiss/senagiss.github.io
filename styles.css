@@ -76,12 +76,3 @@ p {
 #titulo {
     color: white; /* Cambia "white" al color que desees */
 }
-.banner {
-    background-color: #007bff; /* Color de fondo del banner */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    font-size: 18px; /* Tamaño de fuente */
-    font-weight: bold; /* Peso de la fuente */
-}
-
