@@ -57,4 +57,6 @@ nav ul li a {
     cursor: pointer;
 }
 
-
+p {
+    text-align: justify;
+}
