@@ -506,4 +506,37 @@
         </ul>
     </nav>
 </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Visitas</title>
+</head>
+<body>
+    <h1>Bienvenido a la página</h1>
+    <p>Esta página ha sido visitada <span id="contador"></span> veces.</p>
+
+    <script>
+        // Función para obtener y actualizar el contador de visitas
+        function contarVisitas() {
+            // Comprobamos si ya existe una visita almacenada
+            if (localStorage.getItem('visitas')) {
+                // Si existe, incrementamos el contador
+                let visitas = parseInt(localStorage.getItem('visitas'));
+                visitas++;
+                localStorage.setItem('visitas', visitas);
+                document.getElementById('contador').textContent = visitas;
+            } else {
+                // Si no existe, establecemos el contador en 1
+                localStorage.setItem('visitas', 1);
+                document.getElementById('contador').textContent = 1;
+            }
+        }
+
+        // Llamamos a la función al cargar la página
+        window.onload = contarVisitas;
+    </script>
+</body>
+</html>
 
