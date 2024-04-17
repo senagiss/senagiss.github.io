@@ -511,49 +511,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Visitas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+    <title>Contador de Visitas Innovador</title>
+    <script>
+        // Función para obtener la dirección IP del usuario
+        function obtenerDireccionIP() {
+            fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                // Envía la dirección IP a tu servidor para llevar el registro de visitas
+                enviarDatos(data.ip);
+            })
+            .catch(error => console.error('Error al obtener la dirección IP:', error));
         }
-        h1 {
-            color: #333;
+
+        // Función para enviar la dirección IP al servidor
+        function enviarDatos(ip) {
+            // Aquí puedes enviar la dirección IP a tu servidor para llevar el registro de visitas
+            // Por ejemplo, puedes usar AJAX o fetch para enviar una solicitud POST
+            // Asumiremos que tienes un endpoint en tu servidor llamado "/registro-visita" que recibe la dirección IP como parámetro
+            fetch('/registro-visita', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ip: ip })
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Visita registrada con éxito.');
+                } else {
+                    console.error('Error al registrar la visita.');
+                }
+            })
+            .catch(error => console.error('Error al enviar los datos al servidor:', error));
         }
-        #contador {
-            font-size: 24px;
-            color: #007bff;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-    </style>
+
+        // Llamamos a la función para obtener la dirección IP al cargar la página
+        window.onload = obtenerDireccionIP;
+    </script>
 </head>
 <body>
-   <p>Esta página ha sido visitada <span id="contador"></span> veces.</p>
-
-    <script>
-        // Función para obtener y actualizar el contador de visitas
-        function contarVisitas() {
-            // Comprobamos si ya existe una visita almacenada
-            if (localStorage.getItem('visitas')) {
-                // Si existe, incrementamos el contador
-                let visitas = parseInt(localStorage.getItem('visitas'));
-                visitas++;
-                localStorage.setItem('visitas', visitas);
-                document.getElementById('contador').textContent = visitas;
-            } else {
-                // Si no existe, establecemos el contador en 1
-                localStorage.setItem('visitas', 1);
-                document.getElementById('contador').textContent = 1;
-            }
-        }
-
-        // Llamamos a la función al cargar la página
-        window.onload = contarVisitas;
-    </script>
+    <h1>Bienvenido a la página</h1>
+    <p>La página ha registrado tu visita de forma innovadora.</p>
 </body>
 </html>
 
