@@ -509,50 +509,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Visitas Innovador</title>
-    <script>
-        // Función para obtener la dirección IP del usuario
-        function obtenerDireccionIP() {
-            fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                // Envía la dirección IP a tu servidor para llevar el registro de visitas
-                enviarDatos(data.ip);
-            })
-            .catch(error => console.error('Error al obtener la dirección IP:', error));
-        }
-
-        // Función para enviar la dirección IP al servidor
-        function enviarDatos(ip) {
-            // Aquí puedes enviar la dirección IP a tu servidor para llevar el registro de visitas
-            // Por ejemplo, puedes usar AJAX o fetch para enviar una solicitud POST
-            // Asumiremos que tienes un endpoint en tu servidor llamado "/registro-visita" que recibe la dirección IP como parámetro
-            fetch('/registro-visita', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ ip: ip })
-            })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Visita registrada con éxito.');
-                } else {
-                    console.error('Error al registrar la visita.');
-                }
-            })
-            .catch(error => console.error('Error al enviar los datos al servidor:', error));
-        }
-
-        // Llamamos a la función para obtener la dirección IP al cargar la página
-        window.onload = obtenerDireccionIP;
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Visitas</title>
 </head>
 <body>
-    <h1>Bienvenido a la página</h1>
-    <p>La página ha registrado tu visita de forma innovadora.</p>
+  <h1>Bienvenido a mi página</h1>
+  
+  <script>
+    // Función para establecer una cookie
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Función para obtener el valor de una cookie
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    // Función para aumentar el contador de visitas
+    function aumentarContador() {
+      var visitas = getCookie('visitas');
+      if (visitas) {
+        visitas = parseInt(visitas) + 1;
+      } else {
+        visitas = 1;
+      }
+      setCookie('visitas', visitas, 365); // La cookie expirará en 365 días
+    }
+
+    // Al cargar la página, aumentamos el contador de visitas y mostramos el resultado
+    window.onload = function() {
+      aumentarContador();
+      var visitas = getCookie('visitas');
+      document.write("<p>Esta página ha sido visitada " + visitas + " veces.</p>");
+    };
+  </script>
 </body>
 </html>
+
 
