@@ -1,4 +1,4 @@
-const words = ["Palabra1", "Palabra2", "Palabra3"]; // Aquí puedes agregar tus palabras
+const words = ["La salud es la verdadera riqueza, una inversión en ti mismo que siempre tiene el mejor rendimiento.", "Tu cuerpo es tu templo; cuídalo con amor y atención, y te llevará a lugares que nunca imaginaste.", "La verdadera felicidad comienza con una buena salud: nutre tu cuerpo, mente y espíritu, y verás florecer la alegría en tu vida."]; // Aquí puedes agregar tus palabras
 const colors = ["red", "blue", "green"]; // Colores para cambiar
 
 let index = 0;
