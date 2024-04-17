@@ -77,31 +77,3 @@ p {
     color: white; /* Cambia "white" al color que desees */
 }
 
-#maze {
-    display: grid;
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(5, 50px);
-    gap: 2px;
-    border: 2px solid black;
-    width: 300px;
-}
-
-.cell {
-    width: 50px;
-    height: 50px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.player {
-    background-color: blue;
-}
-
-.health {
-    background-color: green;
-}
-
-.exit {
-    background-color: red;
-}
