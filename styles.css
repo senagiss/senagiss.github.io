@@ -69,3 +69,22 @@ p {
 body {
     font-family: Calibri, sans-serif;
 }
+/* Estilos generales */
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para dispositivos con ancho máximo de 600px */
+    /* Puedes modificar este valor según tus necesidades */
+    /* Por ejemplo, si necesitas ajustar para tablets, puedes cambiar el valor a 768px */
+    
+    /* Asegúrate de que tu diseño sea adaptable y fluido */
+    /* Por ejemplo, usar unidades de medida relativas como porcentajes o vw/vh en lugar de valores absolutos */
+    
+    /* Aquí puedes agregar estilos específicos para dispositivos móviles */
+    /* Ajusta los estilos según tus necesidades para que el contenido se vea bien en pantallas más pequeñas */
+}
