@@ -99,3 +99,21 @@ button {
     font-size: 18px;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+canvas {
+  border: 2px solid black;
+  margin-top: 20px;
+}
