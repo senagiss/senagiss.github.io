@@ -77,3 +77,14 @@ p {
     color: white; /* Cambia "white" al color que desees */
 }
 
+.carousel {
+  font-size: 24px;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.word {
+  display: inline-block;
+}
