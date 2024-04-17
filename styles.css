@@ -56,6 +56,12 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
 }
+.content p {
+    text-align: justify;
+}
+li a {
+    text-decoration: none;
+}
 
 p {
     text-align: justify;
