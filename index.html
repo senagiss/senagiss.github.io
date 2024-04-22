@@ -516,41 +516,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calificador de Página</title>
-    <style>
-        /* Estilos para los botones */
-        #btnBuena {
-            background-color: #4CAF50; /* Color verde para el botón de buena página */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px; /* Bordes redondeados */
-            cursor: pointer;
-        }
-
-        #btnMala {
-            background-color: #FF5733; /* Color naranja para el botón de mala página */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px; /* Bordes redondeados */
-            cursor: pointer;
-        }
-    </style>
+    <title>Contador de Visitas</title>
     <script>
-        // JavaScript sigue igual
         document.addEventListener("DOMContentLoaded", function() {
-            // Contenido de JavaScript sigue igual
+            // Verificar si ya existe un contador en localStorage
+            if(localStorage.getItem("visitas")) {
+                var visitas = parseInt(localStorage.getItem("visitas"));
+                visitas++;
+                localStorage.setItem("visitas", visitas);
+            } else {
+                // Si no existe, inicializar el contador en 1
+                localStorage.setItem("visitas", 1);
+            }
+            // Mostrar el contador en el elemento con id "contador"
+            document.getElementById("contador").textContent = "Visitas: " + localStorage.getItem("visitas");
         });
     </script>
 </head>
 <body>
-    <h1>Calificador de Página</h1>
+    <h1>Contador de Visitas</h1>
     <p id="contador">Cargando contador...</p>
-    <button id="btnBuena">Buena Página</button>
-    <button id="btnMala">Mala Página</button>
-    <p id="calificacionBuena">Buenas: 0</p>
-    <p id="calificacionMala">Malas: 0</p>
 </body>
 </html>
 
