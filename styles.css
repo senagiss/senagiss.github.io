@@ -24,12 +24,12 @@ nav ul li a {
 
 /* Cambiar el color del texto al pasar el mouse por encima */
 nav ul li a:hover {
-    color: #FFD700; /* Color dorado */
+    color: #FFCE40; /* Color dorado */
 }
 
 /* Cambiar el color del texto cuando se selecciona */
 nav ul li a:active {
-    color: #FFA500; /* Color naranja */
+    color: #FFCE40; /* Color naranja */
 }
 
 /* Estilo para los popups */
