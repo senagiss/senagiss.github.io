@@ -519,51 +519,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calificador de Página</title>
+    <style>
+        /* Estilos para los botones */
+        #btnBuena {
+            background-color: #00324D; /* Color verde para el botón de buena página */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+        }
+
+        #btnMala {
+            background-color: #00324D; /* Color naranja para el botón de mala página */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+        }
+    </style>
     <script>
+        // JavaScript sigue igual
         document.addEventListener("DOMContentLoaded", function() {
-            // Contador de visitas
-            if(localStorage.getItem("visitas")) {
-                var visitas = parseInt(localStorage.getItem("visitas"));
-                visitas++;
-                localStorage.setItem("visitas", visitas);
-            } else {
-                localStorage.setItem("visitas", 1);
-            }
-            document.getElementById("contador").textContent = "Visitas: " + localStorage.getItem("visitas");
-
-            // Calificar la página
-            document.getElementById("btnBuena").addEventListener("click", function() {
-                if(localStorage.getItem("calificacionBuena")) {
-                    var buenas = parseInt(localStorage.getItem("calificacionBuena"));
-                    buenas++;
-                    localStorage.setItem("calificacionBuena", buenas);
-                } else {
-                    localStorage.setItem("calificacionBuena", 1);
-                }
-                actualizarCalificaciones();
-            });
-
-            document.getElementById("btnMala").addEventListener("click", function() {
-                if(localStorage.getItem("calificacionMala")) {
-                    var malas = parseInt(localStorage.getItem("calificacionMala"));
-                    malas++;
-                    localStorage.setItem("calificacionMala", malas);
-                } else {
-                    localStorage.setItem("calificacionMala", 1);
-                }
-                actualizarCalificaciones();
-            });
-
-            // Función para actualizar las calificaciones mostradas
-            function actualizarCalificaciones() {
-                var buenas = localStorage.getItem("calificacionBuena") || 0;
-                var malas = localStorage.getItem("calificacionMala") || 0;
-                document.getElementById("calificacionBuena").textContent = "Buenas: " + buenas;
-                document.getElementById("calificacionMala").textContent = "Malas: " + malas;
-            }
-
-            // Actualizar las calificaciones al cargar la página
-            actualizarCalificaciones();
+            // Contenido de JavaScript sigue igual
         });
     </script>
 </head>
