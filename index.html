@@ -513,3 +513,48 @@
 </header>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventana emergente sin desplazamiento</title>
+<style>
+    /* Estilo de la ventana emergente */
+    .popup {
+        width: 200px;
+        height: 150px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <!-- Botón para abrir la ventana emergente -->
+    <button id="openPopup">Abrir Ventana Emergente</button>
+
+    <!-- Contenido de la ventana emergente -->
+    <div class="popup" id="popup">
+        Contenido de la ventana emergente
+    </div>
+
+    <script>
+        document.getElementById('openPopup').addEventListener('click', function() {
+            // Guardar la posición actual del desplazamiento
+            var scrollPosition = window.pageYOffset;
+
+            // Mostrar la ventana emergente
+            document.getElementById('popup').style.display = 'block';
+
+            // Restaurar la posición del desplazamiento después de abrir la ventana emergente
+            window.scrollTo(0, scrollPosition);
+        });
+    </script>
+</body>
+</html>
