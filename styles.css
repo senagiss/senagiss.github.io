@@ -88,3 +88,29 @@ body {
     /* Aquí puedes agregar estilos específicos para dispositivos móviles */
     /* Ajusta los estilos según tus necesidades para que el contenido se vea bien en pantallas más pequeñas */
 }
+/* Estilos generales */
+
+/* Estilos para dispositivos con una anchura máxima de 600px */
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas pequeñas */
+}
+
+/* Estilos para dispositivos con una anchura máxima de 900px */
+@media only screen and (max-width: 900px) {
+  /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para dispositivos con una anchura mínima de 1200px */
+@media only screen and (min-width: 1200px) {
+  /* Estilos específicos para pantallas grandes */
+}
+/* Ejemplo de uso de unidades relativas */
+.container {
+  width: 90%; /* El contenedor ocupa el 90% del ancho de la ventana */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Ejemplo de uso de unidades de vista */
+.box {
+  width: 50vw; /* El ancho de la caja es el 50% del ancho de la ventana */
+}
