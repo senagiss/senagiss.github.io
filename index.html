@@ -530,12 +530,51 @@
             }
             // Mostrar el contador en el elemento con id "contador"
             document.getElementById("contador").textContent = "Visitas: " + localStorage.getItem("visitas");
+
+            // Función para calificar la página como buena
+            document.getElementById("btnBuena").addEventListener("click", function() {
+                // Guardar la calificación en localStorage
+                localStorage.setItem("calificacion", "buena");
+                // Cambiar el color del botón a verde
+                document.getElementById("btnBuena").style.backgroundColor = "#4CAF50";
+                // Resetear el color del botón de mala página
+                document.getElementById("btnMala").style.backgroundColor = "";
+            });
+
+            // Función para calificar la página como mala
+            document.getElementById("btnMala").addEventListener("click", function() {
+                // Guardar la calificación en localStorage
+                localStorage.setItem("calificacion", "mala");
+                // Cambiar el color del botón a naranja
+                document.getElementById("btnMala").style.backgroundColor = "#FF5733";
+                // Resetear el color del botón de buena página
+                document.getElementById("btnBuena").style.backgroundColor = "";
+            });
+
+            // Verificar si hay una calificación guardada en localStorage y actualizar los colores de los botones
+            var calificacion = localStorage.getItem("calificacion");
+            if (calificacion === "buena") {
+                document.getElementById("btnBuena").style.backgroundColor = "#4CAF50";
+            } else if (calificacion === "mala") {
+                document.getElementById("btnMala").style.backgroundColor = "#FF5733";
+            }
         });
     </script>
+    <style>
+        /* Estilos para los botones */
+        #btnBuena, #btnMala {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Contador de Visitas</h1>
     <p id="contador">Cargando contador...</p>
+    <button id="btnBuena">Buena</button>
+    <button id="btnMala">Mala</button>
 </body>
 </html>
 
