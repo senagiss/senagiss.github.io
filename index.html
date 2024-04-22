@@ -518,26 +518,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Visitas</title>
+    <title>Calificador de Página</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Verificar si ya existe un contador en localStorage
+            // Contador de visitas
             if(localStorage.getItem("visitas")) {
                 var visitas = parseInt(localStorage.getItem("visitas"));
                 visitas++;
                 localStorage.setItem("visitas", visitas);
             } else {
-                // Si no existe, inicializar el contador en 1
                 localStorage.setItem("visitas", 1);
             }
-            // Mostrar el contador en el elemento con id "contador"
             document.getElementById("contador").textContent = "Visitas: " + localStorage.getItem("visitas");
+
+            // Calificar la página
+            document.getElementById("btnBuena").addEventListener("click", function() {
+                if(localStorage.getItem("calificacionBuena")) {
+                    var buenas = parseInt(localStorage.getItem("calificacionBuena"));
+                    buenas++;
+                    localStorage.setItem("calificacionBuena", buenas);
+                } else {
+                    localStorage.setItem("calificacionBuena", 1);
+                }
+                actualizarCalificaciones();
+            });
+
+            document.getElementById("btnMala").addEventListener("click", function() {
+                if(localStorage.getItem("calificacionMala")) {
+                    var malas = parseInt(localStorage.getItem("calificacionMala"));
+                    malas++;
+                    localStorage.setItem("calificacionMala", malas);
+                } else {
+                    localStorage.setItem("calificacionMala", 1);
+                }
+                actualizarCalificaciones();
+            });
+
+            // Función para actualizar las calificaciones mostradas
+            function actualizarCalificaciones() {
+                var buenas = localStorage.getItem("calificacionBuena") || 0;
+                var malas = localStorage.getItem("calificacionMala") || 0;
+                document.getElementById("calificacionBuena").textContent = "Buenas: " + buenas;
+                document.getElementById("calificacionMala").textContent = "Malas: " + malas;
+            }
+
+            // Actualizar las calificaciones al cargar la página
+            actualizarCalificaciones();
         });
     </script>
 </head>
 <body>
-    <h1>Contador de Visitas</h1>
+    <h1>Calificador de Página</h1>
     <p id="contador">Cargando contador...</p>
+    <button id="btnBuena">Buena Página</button>
+    <button id="btnMala">Mala Página</button>
+    <p id="calificacionBuena">Buenas: 0</p>
+    <p id="calificacionMala">Malas: 0</p>
 </body>
 </html>
 
