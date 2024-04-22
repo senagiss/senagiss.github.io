@@ -115,5 +115,5 @@ body {
   width: 50vw; /* El ancho de la caja es el 50% del ancho de la ventana */
 }
 nav ul li a:hover {
-    color: cyan; /* Cambia el color al pasar el mouse */
+    color: #FFCE40; /* Cambia el color al pasar el mouse */
 }
