@@ -19,6 +19,17 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Cambiar el color del texto al pasar el mouse por encima */
+nav ul li a:hover {
+    color: #FFD700; /* Color dorado */
+}
+
+/* Cambiar el color del texto cuando se selecciona */
+nav ul li a:active {
+    color: #FFA500; /* Color naranja */
 }
 
 /* Estilo para los popups */
@@ -56,6 +67,7 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .content p {
     text-align: justify;
 }
