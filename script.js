@@ -1,15 +1,3 @@
-let goodCount = 0;
-let badCount = 0;
-
-document.getElementById('goodBtn').addEventListener('click', function() {
-    goodCount++;
-    document.getElementById('goodCount').innerText = goodCount;
-});
-
-document.getElementById('badBtn').addEventListener('click', function() {
-    badCount++;
-    document.getElementById('badCount').innerText = badCount;
-});
 // Inicializar los contadores desde el almacenamiento local
 let goodCount = parseInt(localStorage.getItem('goodCount')) || 0;
 let badCount = parseInt(localStorage.getItem('badCount')) || 0;
