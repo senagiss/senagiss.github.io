@@ -129,3 +129,12 @@ body {
 nav ul li a:hover {
     color: #FFCE40; /* Cambia el color al pasar el mouse */
 }
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#counter {
+    font-size: 48px;
+    font-weight: bold;
+}
