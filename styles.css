@@ -193,7 +193,15 @@ nav ul li a {
         margin: 0 auto;
         margin-bottom: 10px;
     }
-}
+/* Estilos base para el submenú */
 .submenu li a {
-    margin: 10px; /* Puedes ajustar el valor del margen según tus necesidades */
+    /* Estilos básicos */
 }
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .submenu li a {
+        margin: 10px; /* Margen para dispositivos móviles */
+    }
+}
+
