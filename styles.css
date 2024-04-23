@@ -139,7 +139,7 @@ nav ul li a:hover {
 }
 
 .good-btn {
-    background-color:#39A900;
+    background-color: #28a745;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -159,6 +159,7 @@ nav ul li a:hover {
 
 .count {
     font-size: 24px;
-    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
     font-weight: bold;
 }
