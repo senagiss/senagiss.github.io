@@ -514,87 +514,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Visitas</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Verificar si ya existe un contador en localStorage para las visitas
-            if(localStorage.getItem("visitas")) {
-                var visitas = parseInt(localStorage.getItem("visitas"));
-                visitas++;
-                localStorage.setItem("visitas", visitas);
-            } else {
-                // Si no existe, inicializar el contador en 1
-                localStorage.setItem("visitas", 1);
-            }
-            // Mostrar el contador de visitas en el elemento con id "contador"
-            document.getElementById("contador").textContent = "Visitas: " + localStorage.getItem("visitas");
-
-            // Verificar si ya existen contadores en localStorage para las calificaciones
-            if (!localStorage.getItem("calificacionBuena")) {
-                localStorage.setItem("calificacionBuena", 0);
-            }
-            if (!localStorage.getItem("calificacionMala")) {
-                localStorage.setItem("calificacionMala", 0);
-            }
-
-            // Mostrar los contadores de calificaciones en los elementos correspondientes
-            document.getElementById("calificacionBuena").textContent = "Buenas: " + localStorage.getItem("calificacionBuena");
-            document.getElementById("calificacionMala").textContent = "Malas: " + localStorage.getItem("calificacionMala");
-
-            // Función para calificar la página como buena
-            document.getElementById("btnBuena").addEventListener("click", function() {
-                // Incrementar el contador de buenas calificaciones
-                var buenas = parseInt(localStorage.getItem("calificacionBuena")) + 1;
-                localStorage.setItem("calificacionBuena", buenas);
-                // Cambiar el color del botón de buena página a verde
-                document.getElementById("btnBuena").style.backgroundColor = "#4CAF50";
-                // Resetear el color del botón de mala página
-                document.getElementById("btnMala").style.backgroundColor = "";
-                // Actualizar el contador mostrado en la página
-                document.getElementById("calificacionBuena").textContent = "Buenas: " + buenas;
-            });
-
-            // Función para calificar la página como mala
-            document.getElementById("btnMala").addEventListener("click", function() {
-                // Incrementar el contador de malas calificaciones
-                var malas = parseInt(localStorage.getItem("calificacionMala")) + 1;
-                localStorage.setItem("calificacionMala", malas);
-                // Cambiar el color del botón de mala página a naranja
-                document.getElementById("btnMala").style.backgroundColor = "#FF5733";
-                // Resetear el color del botón de buena página
-                document.getElementById("btnBuena").style.backgroundColor = "";
-                // Actualizar el contador mostrado en la página
-                document.getElementById("calificacionMala").textContent = "Malas: " + malas;
-            });
-
-            // Verificar si hay una calificación guardada en localStorage y actualizar los colores de los botones
-            var calificacion = localStorage.getItem("calificacion");
-            if (calificacion === "buena") {
-                document.getElementById("btnBuena").style.backgroundColor = "#4CAF50";
-            } else if (calificacion === "mala") {
-                document.getElementById("btnMala").style.backgroundColor = "#FF5733";
-            }
-        });
-    </script>
-    <style>
-        /* Estilos para los botones */
-        #btnBuena, #btnMala {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px; /* Bordes redondeados */
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Contador y Calificación</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Contador de Visitas</h1>
-    <p id="contador">Cargando contador...</p>
-    <button id="btnBuena">Buena</button>
-    <button id="btnMala">Mala</button>
-    <p id="calificacionBuena"></p>
-    <p id="calificacionMala"></p>
+  <h1>Bienvenido a la Página</h1>
+  <p>Esta es una página de ejemplo con un contador de visitas y opciones para calificar la página.</p>
+  <p>Visitas: <span id="visitCount">0</span></p>
+  <div id="buttons">
+    <button id="goodButton" class="button">Buena Página</button>
+    <button id="badButton" class="button">Mala Página</button>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
 
