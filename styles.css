@@ -194,3 +194,6 @@ nav ul li a {
         margin-bottom: 10px;
     }
 }
+.submenu li a {
+    margin: 10px; /* Puedes ajustar el valor del margen según tus necesidades */
+}
