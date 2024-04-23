@@ -19,4 +19,3 @@ document.getElementById('badBtn').addEventListener('click', function() {
     document.getElementById('badCount').innerText = badCount;
     localStorage.setItem('badCount', badCount);
 });
-
