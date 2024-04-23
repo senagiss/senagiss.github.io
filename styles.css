@@ -201,7 +201,7 @@ nav ul li a {
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     .submenu li a {
-        margin: 0.5em; /* Margen para dispositivos móviles */
+        margin: 2.5em; /* Margen para dispositivos móviles */
     }
 }
 
