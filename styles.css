@@ -129,20 +129,3 @@ body {
 nav ul li a:hover {
     color: #FFCE40; /* Cambia el color al pasar el mouse */
 }
-.button {
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-}
-
-#goodButton {
-  background-color: green;
-  color: white;
-}
-
-#badButton {
-  background-color: red;
-  color: white;
-}
