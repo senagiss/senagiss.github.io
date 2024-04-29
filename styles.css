@@ -194,3 +194,11 @@ nav ul li a {
         margin-bottom: 10px;
     }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px; /* Puedes ajustar el valor de los márgenes según tu preferencia */
+}
