@@ -803,7 +803,7 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Salud Pública Avanzada</title>
+    <title>Toggle Revista REDIIS</title>
     <style>
         .hidden {
             display: none;
@@ -812,20 +812,20 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
 </head>
 <body>
     <ul>
-        <li><a href="#" onclick="toggleSaludPúblicaAvanzada(event)">Revista REDIIS</a></li>
+        <li><a href="#" onclick="toggleRevistaREDIIS(event)">Revista REDIIS</a></li>
     </ul>
 
-    <div id="SaludPúblicaAvanzadaContent" class="hidden">
+    <div id="RevistaREDIISContent" class="hidden">
          <p><strong>Link redirigible Revista REDIIS</strong></p>
           </div>
     <script>
-        function toggleSaludPúblicaAvanzada(event) {
+        function toggleRevistaREDIIS(event) {
             event.preventDefault();
-            var SaludPúblicaAvanzadaContent = document.getElementById("SaludPúblicaAvanzadaContent");
-            if (SaludPúblicaAvanzadaContent.style.display === "none") {
-                SaludPúblicaAvanzadaContent.style.display = "block";
+            var RevistaREDIISContent = document.getElementById("RevistaREDIISContent");
+            if (RevistaREDIISContent.style.display === "none") {
+                RevistaREDIISContent.style.display = "block";
             } else {
-                SaludPúblicaAvanzadaContent.style.display = "none";
+                RevistaREDIISContent.style.display = "none";
             }
         }
      </script>
