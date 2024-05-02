@@ -33,7 +33,7 @@
 </html>
 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -97,7 +97,7 @@
     <img src="IMG_0490.JPG" alt="Imagen 2">
     <img src="IMG_0411.JPG" alt="Imagen 3">
     <img src="IMG_0415.JPG" alt="Imagen 4">
-       <img src="IMG_0423.JPG" alt="Imagen 3">
+    <img src="IMG_0423.JPG" alt="Imagen 3">
   </div>
   <div class="carousel-control prev" onclick="prevSlide()">❮</div>
   <div class="carousel-control next" onclick="nextSlide()">❯</div>
@@ -107,6 +107,14 @@
   let carouselIndex = 0;
   const slides = document.querySelectorAll('.carousel img');
   const slideWidth = slides[0].clientWidth; // Ancho de una imagen
+  const intervalTime = 3000; // Cambia la imagen cada 3 segundos
+  let slideInterval;
+
+  function startSlide() {
+    slideInterval = setInterval(() => {
+      nextSlide();
+    }, intervalTime);
+  }
 
   function nextSlide() {
     carouselIndex = (carouselIndex + 1) % slides.length;
@@ -122,10 +130,14 @@
     const offset = carouselIndex * -slideWidth;
     document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
   }
+
+  // Inicia el carrusel automáticamente cuando la página se carga
+  startSlide();
 </script>
 
 </body>
 </html>
+
 <h1 style="text-align: center; color: #00324D;">SALUD PÚBLICA CFTHS</h1>
 <!DOCTYPE html>
 <html lang="es">
