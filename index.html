@@ -953,9 +953,8 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
     cursor: pointer;
     font-size: 16px;
   }
-  #result-container {
-    margin-top: 20px;
-    text-align: center;
+  .highlight {
+    background-color: yellow;
   }
 </style>
 </head>
@@ -970,12 +969,16 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
   <script>
     document.getElementById('search-button').addEventListener('click', function() {
       var searchTerm = document.getElementById('search-input').value.toLowerCase();
-      var content = document.body.innerText.toLowerCase();
+      var content = document.body.innerHTML.toLowerCase();
       var regex = new RegExp(searchTerm, 'gi');
       var matches = content.match(regex);
       
       if (matches) {
         document.getElementById('search-result').innerHTML = 'Se encontraron ' + matches.length + ' resultado(s) para "' + searchTerm + '".';
+        // Resaltar las coincidencias
+        document.body.innerHTML = document.body.innerHTML.replace(regex, function(match) {
+          return '<span class="highlight">' + match + '</span>';
+        });
       } else {
         document.getElementById('search-result').innerHTML = 'No se encontraron resultados para "' + searchTerm + '".';
       }
@@ -983,3 +986,4 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
   </script>
 </body>
 </html>
+
