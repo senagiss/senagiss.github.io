@@ -922,3 +922,56 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio de Publicidad</title>
+    <style>
+        /* Estilos para el contenedor del anuncio */
+        .anuncio {
+            width: 300px;
+            height: 250px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Estilos para la imagen del anuncio */
+        .anuncio img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilos para el botón de cierre */
+        .cerrar {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #ccc;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor del anuncio -->
+    <div class="anuncio">
+        <!-- Imagen del anuncio -->
+        <img src="sennova 2024.png" alt="Anuncio">
+
+        <!-- Botón de cierre del anuncio -->
+        <div class="cerrar" onclick="cerrarAnuncio()">Cerrar</div>
+    </div>
+
+    <!-- Script para cerrar el anuncio -->
+    <script>
+        function cerrarAnuncio() {
+            var anuncio = document.querySelector('.anuncio');
+            anuncio.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
