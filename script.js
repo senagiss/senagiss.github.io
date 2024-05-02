@@ -21,3 +21,14 @@ document.getElementById('badBtn').addEventListener('click', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var saludo = document.getElementById('saludo');
+  
+  // Mostrar el saludo
+  saludo.style.opacity = '1';
+
+  // Desaparecer después de 3 segundos
+  setTimeout(function() {
+    saludo.style.opacity = '0';
+  }, 3000);
+});
