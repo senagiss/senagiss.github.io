@@ -935,4 +935,119 @@ con los cambios que se pretenden en la educación, respondiendo de manera acerta
 </body>
 </html>
 
+import pygame
+import random
+
+# Inicializar Pygame
+pygame.init()
+
+# Definir colores
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+
+# Definir tamaño de pantalla
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
+# Definir tamaño de la cuadrícula
+GRID_SIZE = 10
+CELL_SIZE = SCREEN_WIDTH // GRID_SIZE
+
+# Definir clase para el jugador
+class Player(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((CELL_SIZE, CELL_SIZE))
+        self.image.fill(RED)
+        self.rect = self.image.get_rect()
+        self.rect.x = 0
+        self.rect.y = 0
+
+# Definir clase para el obstáculo
+class Obstacle(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((CELL_SIZE, CELL_SIZE))
+        self.image.fill(WHITE)
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+# Definir clase para el objeto de salud
+class Health(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((CELL_SIZE, CELL_SIZE))
+        self.image.fill(GREEN)
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+
+# Función para generar obstáculos aleatorios
+def generate_obstacles():
+    obstacles = pygame.sprite.Group()
+    for _ in range(20):  # Generar 20 obstáculos
+        x = random.randint(0, GRID_SIZE - 1) * CELL_SIZE
+        y = random.randint(0, GRID_SIZE - 1) * CELL_SIZE
+        obstacle = Obstacle(x, y)
+        obstacles.add(obstacle)
+    return obstacles
+
+# Función para generar objetos de salud aleatorios
+def generate_health():
+    healths = pygame.sprite.Group()
+    for _ in range(10):  # Generar 10 objetos de salud
+        x = random.randint(0, GRID_SIZE - 1) * CELL_SIZE
+        y = random.randint(0, GRID_SIZE - 1) * CELL_SIZE
+        health = Health(x, y)
+        healths.add(health)
+    return healths
+
+# Función principal del juego
+def main():
+    # Configurar pantalla
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Juego de esquivar obstáculos")
+
+    # Crear jugador
+    player = Player()
+
+    # Crear grupos de sprites
+    all_sprites = pygame.sprite.Group()
+    all_sprites.add(player)
+    obstacles = generate_obstacles()
+    all_sprites.add(obstacles)
+    healths = generate_health()
+    all_sprites.add(healths)
+
+    # Bucle principal del juego
+    running = True
+    while running:
+        # Manejo de eventos
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        # Lógica del juego
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_LEFT]:
+            player.rect.x -= CELL_SIZE
+        elif keys[pygame.K_RIGHT]:
+            player.rect.x += CELL_SIZE
+        elif keys[pygame.K_UP]:
+            player.rect.y -= CELL_SIZE
+        elif keys[pygame.K_DOWN]:
+            player.rect.y += CELL_SIZE
+
+        # Dibujar en pantalla
+        screen.fill((0, 0, 0))
+        all_sprites.draw(screen)
+        pygame.display.flip()
+
+    # Salir del juego
+    pygame.quit()
+
+if __name__ == "__main__":
+    main()
 
