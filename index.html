@@ -251,14 +251,31 @@
         .video-container {
             text-align: center;
         }
+        .video-container iframe {
+            max-width: 100%;
+            max-height: 100%;
+        }
     </style>
 </head>
 <body>
     <h2></h2>
     <div class="video-container">
         <!-- Utiliza solo el identificador del video (el código después de 'youtu.be/') -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2y-No1h66lc" frameborder="0" allowfullscreen></iframe>
+        <a href="#" onclick="openVideoPopup();">Abrir Video</a>
     </div>
+
+    <script>
+        function openVideoPopup() {
+            var width = 560; // Ancho del video
+            var height = 315; // Altura del video
+            var left = (screen.width - width) / 2;
+            var top = (screen.height - height) / 2;
+            var popup = window.open('https://www.youtube.com/embed/2y-No1h66lc', 'Video Pop-up', 'width=' + width + ', height=' + height + ', top=' + top + ', left=' + left);
+            if (window.focus) {
+                popup.focus();
+            }
+        }
+    </script>
 </body>
 </html>
 
