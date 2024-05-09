@@ -241,32 +241,15 @@
 </html>
             <p style="text-align: center;"><strong>"Diez Pilares para una Vida Plena y Saludable: Consejos Esenciales para el Bienestar"</strong></p>
               <br> <!-- Agregar un salto de línea entre el primer y segundo párrafo -->
-   <p> <!DOCTYPE html>
+   <p> <p> <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded YouTube Video</title>
     <style>
-        .video-modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+        .video-container {
             text-align: center;
-        }
-        .video-modal-content {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .video-container iframe {
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
@@ -274,30 +257,10 @@
     <h2></h2>
     <div class="video-container">
         <!-- Utiliza solo el identificador del video (el código después de 'youtu.be/') -->
-        <a href="#" onclick="openVideoModal();">Reproducir Video</a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2y-No1h66lc" frameborder="0" allowfullscreen></iframe>
     </div>
-
-    <div class="video-modal" id="videoModal">
-        <div class="video-modal-content">
-            <span onclick="closeVideoModal();" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">Cerrar</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2y-No1h66lc" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <script>
-        function openVideoModal() {
-            var modal = document.getElementById("videoModal");
-            modal.style.display = "block";
-        }
-
-        function closeVideoModal() {
-            var modal = document.getElementById("videoModal");
-            modal.style.display = "none";
-        }
-    </script>
 </body>
 </html>
-
 
           <p><strong> • Alimentación balanceada:</strong></p> Prioriza una dieta rica en frutas, verduras, granos enteros, proteínas magras y grasas saludables. Limita el consumo de alimentos procesados, azúcares y grasas saturadas.
                 <p><strong> • Hidratación:</strong></p> Bebe suficiente agua a lo largo del día para mantener tu cuerpo hidratado y funcionando correctamente.
